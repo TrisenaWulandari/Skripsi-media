@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class="bx bx-magnet"></i>
+        <span class="logo_name">Isi Pelajaran</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Home</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Home</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="materi_a.html">
+              <i class="bx bx-collection"></i>
+              <span class="link_name">Topik A</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_a.html">Topik A : Apa dan Untuk apa Magnet Diciptakan?</a></li>
+            <li><a href="kuis_a.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="materi_b.html">
+              <i class="bx bx-folder-open"></i>
+              <span class="link_name">Topik B</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_b.html">Topik B : Bagaimana cara mendapatkan Energi Listrik</a></li>
+            <li><a href="kuis_b.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="materi_c.html">
+              <i class="bx bx-book-alt"></i>
+              <span class="link_name">Topik C</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_c.html">Topik C : Teknologi Untuk kehidupan</a></li>
+            <li><a href="kuis_c.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Evaluasi</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="evaluasi.html">Evaluasi</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <!--<img src="image/profile.jpg" alt="profileImg">-->
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Trisena Wulandari</div>
+              <div class="job">1910131320014</div>
+            </div>
+            <i class="bx bx-log-out"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <span class="text">Ilmu Pengetahuan Alam dan Sosial</span>
+      </div>
+      <div id="content">
+        <div class="konten">
+          <div class="pendahuluan">
+            <center>
+              <h2><b>Kuis 2 Topik B</b></h2>
+            </center>
+            <div class="petunjuk">
+              <p>
+                <br />
+                <b>Petunjuk :</b>
+              </p>
+              <ol style="padding-left: 20px">
+                <b>
+                  <li class="nomor">Kuis ini terdiri dari 10 soal berupa pilihan ganda.</li>
+                  <li class="nomor">Silahkan masukkan nama lengkap, kelas, dan password.</li>
+                  <li class="nomor">Setelah selesai mengisi nama lengkap, kelas, dan password. Tekan / klik tombol MULAI.</li>
+                </b>
+              </ol>
+              <div id="kotak" style="padding-left: 20px">Masukkan Nama Terlebih Dahulu</div>
+              <div id="tp">
+                <center>
+                  <table>
+                    <tr style="padding: 2%; width: 10%">
+                      <td style="padding: 1%"><b>Nama</b></td>
+                      <td>:<input type="text" placeholder="Masukkan Nama" id="nama" style="font-size: 18px" /></td>
+                    </tr>
+                    <tr style="padding: 2%; width: 10%">
+                      <td style="padding: 1%"><b>Kelas</b></td>
+                      <td>:<input type="text" placeholder="Contoh Kelas 7a" id="kelas" style="font-size: 18px" /></td>
+                    </tr>
+                    <tr style="padding: 2%; width: 10%">
+                      <td style="padding: 1%"><b>Token</b></td>
+                      <td>:<input type="password" placeholder="Masukkan Token" id="password" style="font-size: 18px" /></td>
+                    </tr>
+                  </table>
+                  <button class="tombolmulai" id="submit" style="text-align: center; color: white; background-color: #108aee; width: 10%; border-radius: 7px 7px 7px 7px">Mulai</button>
+                </center>
+              </div>
+            </div>
+
+            <script src="/js/kuis.js"></script>
+            <script src="/js/sidebar.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

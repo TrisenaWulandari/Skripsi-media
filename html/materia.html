@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/kuis.css" />
+    <link rel="stylesheet" href="/css/kuisdata.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <title>Ilmu Pengetahuan Alam dan Sosial</title>
+  </head>
+  <body>
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class="bx bx-magnet"></i>
+        <span class="logo_name">Isi Pelajaran</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="home.html">
+            <i class="bx bx-home-alt"></i>
+            <span class="link_name">Home</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="home.html">Home</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-book"></i>
+              <span class="link_name">Topik A</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_a.html">Topik A : Apa dan Untuk apa Magnet Diciptakan?</a></li>
+            <li><a href="kuis1.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-book-reader"></i>
+              <span class="link_name">Topik B</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_b.html">Topik B : Bagaimana cara mendapatkan Energi Listrik</a></li>
+            <li><a href="kuis2.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="materi_c.html">
+              <i class="bx bx-book-open"></i>
+              <span class="link_name">Topik C</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_c.html">Topik C : Teknologi Untuk kehidupan</a></li>
+            <li><a href="kuis_c.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Evaluasi</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="evaluasi.html">Evaluasi</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <!--<img src="image/profile.jpg" alt="profileImg">-->
+            </div>
+            <div class="name">
+              <div class="name"></div>
+              <div class="job"></div>
+            </div>
+            <i class="bx bx-log-out" href="home.html"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <span class="text">Ilmu Pengetahuan Alam dan Sosial</span>
+      </div>
+      <div id="content">
+        <div class="kliktujuanpembelajaran">
+          <img src="/img/Materi.png" width="40" height="40" />Tujuan Pembelajaran<br />
+          <div class="tujuan justify-content-center" id="tujuan">
+            <ol type="">
+              <li>Peserta didik Mendeskripsikan bagaimana magnet diterapkan dalam kehidupan sehari-hari.</li>
+              <li>Peserta didik menunjukan upaya membuat magnet dengan cara sederhana</li>
+            </ol>
+          </div>
+
+          <br />
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="font-weight: bold">
+                  <img src="/img/openbook1.png" alt="" width="40px" /> Ayo Mengamati
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <div class="Kotak">
+                    <div class="card-body">
+                      <h5 class="text-Center text-succes"></h5>
+
+                      <ol>
+                        Apa yang kalian ketahui dengan magent? Ya, Magnet adalah suatu benda yang memiliki kemampuan menarik benda-benda lain yang ada di sekitarnya contohnya besi dan ada juga loh benda-benda yang memiliki sifat magnetik
+                        kuat, namun ada juga benda yang sifat magnetiknya lemah contohnya, benda yang tidak memiliki sifat kemagnetan sama sekali yaitu kayu, beras, kerikil, dan seterusnya. Dan Apa itu teknologi? Bagaimana listrik dan
+                        magnet diterapkan dalam berbagai teknologi untuk membantu kita melakukan aktivitas sehari-hari? Yuk, kita berkenalan dengan listrik dan magnet! Kemudian, kita cari tahu bagaimana mereka bekerja!
+                      </ol>
+
+                      <div class="text-center">
+                        <video controls id="video1_1" class="video">
+                          <source src="/Video/Sifat-sifat Magnet.mp4" type="video/webm" />
+                        </video>
+                        <center>
+                          <div class="card video">
+                            <div class="card-body-12 pb-2 pt-2">
+                              <a href="#" onclick="setCurTime1_1(1)" class="badge badge-primary btnvideo ml-2 mr-2">Pendahuluan</a>
+                              <a href="#" onclick="setCurTime1_1(2)" class="badge badge-primary btnvideo ml-2 mr-2">Alat dan Bahan</a>
+                              <a href="#" onclick="setCurTime1_1(3)" class="badge badge-primary btnvideo ml-2 mr-2">Cara Kerja</a>
+                            </div>
+                          </div>
+                        </center>
+                      </div>
+                      <br />
+                    </div>
+                    <!-- Soal Latihan -->
+
+                    <div class="latihan">
+                      <div class="petunjuk">
+                        <h5><b>&nbsp;Petunjuk Pengerjaan :</b></h5>
+                        <ol>
+                          <li>Untuk memahami materi di atas, silahkan jawab pertanyaan di bawah ini!</li>
+                          <li>Jawablah pertanyaan dengan mengklik salah satu jawaban yang dianggap benar!</li>
+                          <li>Klik tombol <span style="color: white; background-color: darkcyan; border-radius: 10px; border: 3px double white; padding: 3px">Cek Jawaban</span> untuk mengetahui jawaban benar atau salah.</li>
+                          <li>Jika jawabanmu benar, muncul keterangan "<span style="color: green">Jawaban Benar</span>".</li>
+                          <li>Jika jawabanmu salah, muncul keterangan "<span style="color: red">Jawaban Salah</span>".</li>
+                          <li>Klik tombol <span style="color: white; background-color: darkcyan; border-radius: 10px; border: 3px double white; padding: 3px">Coba Lagi</span> untuk mencoba kembali.</li>
+                        </ol>
+                      </div>
+                      <br />
+                      <div class="isiKuis">
+                        <form name="quiz">
+                          <ol>
+                            <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                              Benda yang memiliki kemampuan dapat menarik benda lain disebut …
+                              <span id="ket-no0"></span>
+                              <br />
+                            </li>
+                            <input class="td-" type="radio" name="q1" value="a" id="a" />
+                            <label style="padding: 3px" for="a">a. Kuningan</label>
+                            <br />
+                            <input class="td-" type="radio" name="q1" value="b" id="b" />
+                            <label style="padding: 3px" for="b">b. Magnet</label>
+                            <br />
+                            <input class="td-" type="radio" name="q1" value="c" id="c" />
+                            <label style="padding: 3px" for="c">c. Besi</label>
+                            <br />
+
+                            <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                              Bahan dibawah ini yang tidak bisa ditarik oleh magent adalah…
+                              <span id="ket-no1"></span>
+                              <br />
+                            </li>
+                            <input class="td-" type="radio" name="q2" value="a" id="a" />
+                            <label style="padding: 3px" for="a">a. Besi</label>
+                            <br />
+                            <input class="td-" type="radio" name="q2" value="b" id="b" />
+                            <label style="padding: 3px" for="b">b. Kaca</label>
+                            <br />
+                            <input class="td-" type="radio" name="q2" value="c" id="c" />
+                            <label style="padding: 3px" for="c">c. Magnet</label>
+                            <br />
+
+                            <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                              Berikut ini termasuk cara menghilangkan kemagnetan suatu benda, kecuali …
+                              <span id="ket-no2"></span>
+                              <br />
+                            </li>
+                            <input class="td-" type="radio" name="q3" value="a" id="a" />
+                            <label style="padding: 3px" for="a">a. dipanaskan</label>
+                            <br />
+                            <input class="td-" type="radio" name="q3" value="b" id="b" />
+                            <label style="padding: 3px" for="b">b. diputuskan</label>
+                            <br />
+                            <input class="td-" type="radio" name="q3" value="c" id="c" />
+                            <label style="padding: 3px" for="c">c. dialiri arus listrik</label>
+                            <br />
+
+                            <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                              Jika dua buah kutub magnet sejenis berdekatan maka yang terjadi yaitu ….
+                              <span id="ket-no3"></span>
+                              <br />
+                            </li>
+                            <input class="td-" type="radio" name="q4" value="a" id="a" />
+                            <label style="padding: 3px" for="a">a. Tolak Menolak</label>
+                            <br />
+                            <input class="td-" type="radio" name="q4" value="b" id="b" />
+                            <label style="padding: 3px" for="b">b. Tarik Menarik</label>
+                            <br />
+                            <input class="td-" type="radio" name="q4" value="c" id="c" />
+                            <label style="padding: 3px" for="c">c. Kedua Magnet Menyatu</label>
+                            <br />
+
+                            <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                              Jika magnet batang dipotong menjadi 3 bagian, maka bagian yang tengah ….
+                              <span id="ket-no4"></span>
+                              <br />
+                            </li>
+                            <input class="td-" type="radio" name="q5" value="a" id="a" />
+                            <label style="padding: 3px" for="a">a. Hanya Memiliki Kutub Selatan</label>
+                            <br />
+                            <input class="td-" type="radio" name="q5" value="b" id="b" />
+                            <label style="padding: 3px" for="b">b. Tidak bersifat Magnetik</label>
+                            <br />
+                            <input class="td-" type="radio" name="q5" value="c" id="c" />
+                            <label style="padding: 3px" for="c">c. Mempunyai Kutub Utara dan selatan </label>
+                            <br />
+                          </ol>
+                          <center>
+                            <p id="ket" class="center ket-jwbn"></p>
+                            <div class="left ket2" id="ket2"></div>
+
+                            <div class="center">
+                              <input type="button" class="button-utama" value="Cek Jawaban " onclick="getScore(this.form);" />
+                              <input id="reset" type="reset" class="button-utama" value="Coba Lagi" />
+                            </div>
+                          </center>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="font-weight: bold">
+                    <img src="/img/openbook.png" width="40px" /> Ayo Menanya
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    <div class="Kotak">
+                      <div class="card-body text-Center">
+                        <h6 class="text-Center text-align">Perhatikan Gambar dibawah ini</h6>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                          <div class="col">
+                            <div class="card">
+                              <img src="/img/magnet1.png" class="card-img-top" alt="magnet" width="300px" />
+                              <div class="card-body">
+                                <h5 class="card-title">Sifat Magnet</h5>
+                                <p class="card-text">
+                                  Magnet adalah suatu logam yang memiliki kemampuan menarik besi lainnya. Tidak semua benda bisa ditarik oleh magnet. Hanya benda-benda yang mengandung logam yang dapat ditarik oleh magnet. Itu sebabnya dalam
+                                  percobaan pertama hanya klip besi, jarum, peniti, dan logam yang dapat ditarik oleh magnet. Adapun beras, kedelai, biji-bijian, kayu, tanah, dan kerikil tidak mengandung unsur besi sehingga tidak dapat
+                                  ditarik oleh magnet.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="/img/magnet.png" class="card-img-top" alt="magnet1" width="300px" />
+                              <div class="card-body">
+                                <h5 class="card-title">Garis-garis Magnet</h5>
+                                <p class="card-text">
+                                  Garis-garis yang terbentuk menunjukkan medan magnet. Semakin banyak serbuk pasir/besi yang menempel di bagian tertentu maka semakin besar kekuatan magnet di bagian tersebut Setiap magnet selalu memiliki
+                                  kutub Utara yang disimbolkan dengan huruf N dan kutub Selatan yang disimbolkan dengan huruf S. Jika kalian mendekatkan dua magnet dengan kutub sejenis maka magnet tersebut akan saling menolak satu sama lain
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="/img/magnet2.png" class="card-img-top" alt="magnet2" width="300px" />
+                              <div class="card-body">
+                                <h5 class="card-title">Kekuatan Magnet</h5>
+                                <p class="card-text">
+                                  Dari percobaan kedua, kalian dapat melihat bahwa magnet yang ada di bagian ujung menarik lebih banyak serbuk pasir/besi dibandingkan yang ada di bagian tengah magnet. Hal ini menunjukkan bahwa kekuatan
+                                  magnet yang paling besar terdapat di bagian ujungnya.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="/img/magnet3.png" class="card-img-top" alt="magnet3" width="300px" />
+                              <div class="card-body">
+                                <h5 class="card-title">Kegunaan Magnet</h5>
+                                <p class="card-text">
+                                  Kemampuan magnet untuk menarik logam dan gaya medan magnetnya sangat bermanfaat dalam membantu kita menjalani aktivitas sehari-hari. Banyak peralatan elektronik yang memanfaatkan gaya magnet, seperti
+                                  pengeras suara yang ada di ponsel pintar/televisi, hiasan kulkas, dinamo pada kendaraan bermotor atau mesin, headset, sirine, pintu lemari pendingin, dan gardu listrik.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Latihan Menanya -->
+                      <div class="mb-3">
+                        <h5 class="text-succes"></h5>
+                        <br />
+                        <div class="petunjuk">Buatlah pertanyaan dan jawaban berdasarkan penjelasan yang anda ketahui tentang sifat-sifat magnet pada kotak jawaban yang sudah disediakan! Lihat pada contoh soal nomor 1</div>
+                        <br />
+                        <div class="row">
+                          <div class="col-1 text-end pe-0 me-0"><p>1.</p></div>
+                          <div class="col-11 ps-0 ms-0">
+                            <p>Apa saja manfaat dari magnet?<br />Jawab:<br />Magnet memiliki manfaat utama adalah menarik benda lain terutama benda-benda yang memang berbahan khusus, seperti baja dan besi.</p>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                          <div class="col-1 text-end pe-0 me-0"><p>2.</p></div>
+                          <div class="col-11 ps-0 ms-0">
+                            <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p2" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j2" /></p>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                          <div class="col-1 text-end pe-0 me-0"><p>3.</p></div>
+                          <div class="col-11 ps-0 ms-0">
+                            <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p3" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j3" /></p>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                          <div class="col-1 text-end pe-0 me-0"><p>4.</p></div>
+                          <div class="col-11 ps-0 ms-0">
+                            <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p4" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j4" /></p>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                          <div class="col-1 text-end pe-0 me-0"><p>5.</p></div>
+                          <div class="col-11 ps-0 ms-0">
+                            <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p5" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j5" /></p>
+                          </div>
+                        </div>
+                        <p class="text-end"><button class="btn btn-primary btn-md" type="submit" id="selesai">Selesai</button></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree"
+                    style="font-weight: bold"
+                  >
+                    <img src="/img/openbook2.png" width="40px" />Ayo Mencoba
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    <div class="Kotak">
+                      <div class="row">
+                        <div class="col-md-10">
+                          <h4 class="text-Center" style="text-align: center">Membuat Magnet Sendiri</h4>
+                          <p class="fw-bold">Alat dan Bahan</p>
+                          <ol type="1">
+                            <li>Magnet</li>
+                            <li>3 Buah Paku</li>
+                            <li>Serbuk Besi</li>
+                            <li>Lilitan Kumparan</li>
+                            <li>2 Buah Batrai dengan Kabel Penghubung</li>
+                          </ol>
+                        </div>
+
+                        <div class="col-md-10">
+                          <p class="fw-bold">Langkah Percobaan</p>
+                          <ol type="1">
+                            <li>Pertama,dengan cara ditempelkan, kita harus menempelkan paku dengan magent batang selama 5 Menit.</li>
+                            <li>Ketika sudah 5 menit, Maka kita lepaskan dari magnet batangnya.</li>
+                            <li>Setelah itu, kita letakkan paku di serbuk besi yang sudah disediakan tadi, Lalu kita angkat lagi paku yang di taburkan serbuk besi tadi, Maka akan Menempel dipermukaan paku.</li>
+                            <li>Kedua, dengan cara digesek, kita menggesekkan paku dengan magnet batang, selama 3 menit. Dengan 1 kutub saja</li>
+                            <li>Ketika sudah 3 menit, kita letakkan paku di serbuk besi yang sudah disediakan tadi</li>
+                            <li>Lalu kita angkat lagi paku yang di taburkan serbuk besi tadi, Maka akan Menempel dipermukaan paku.</li>
+                            <li>Ketiga, dengan cara Induksi, kita tidak menggunakan magnet melainkan menggunakan kumparan yang sudah dililit.</li>
+                            <li>Setelah itu, kita masukan paku kedalam lilitan kumparan.</li>
+                            <!-- <div class="container text-center">
+                              <div class="col-md-4 offset-md-4">
+                                <div class="cborder-1 rounded float-end">
+                                  <img src="/img/Lilitan Kumparan.png" alt="Lilitan Kumparan" class="filter-gambar" style="width: 60%" height="60%" />
+
+                                  <p class="pt-2 pb-0"></p>
+                                  <p class="text-center">
+                                    <small><b>Lilian Kumparan</b></small>
+                                  </p>
+                                </div>
+                              </div>
+                            </div> -->
+                            <li>Hubungkan ujung lilitan kumparan dengan kabel penghubung batrai.</li>
+                            <li>Diamkan selama 3 menit, Setelah 3 menit lepaskan paku dengan lilitan kumparan</li>
+                            <li>Lalu, lakukan sama dengan cara yang sebelumnya menggunakan serbuk besi.</li>
+                            <li>Apa yang terjadi? Maka yang kita cobakan ternyata magnetnya lebih banyak menggunakan tegangan dari kedua batrai di bandingkan dengan cara di gesek dan ditempel.</li>
+                          </ol>
+                        </div>
+
+                        <div class="text-center">
+                          <video controls id="video1_2" class="video">
+                            <source src="/Video/Cara Membuat Magnet Sendiri.mp4" type="video/webm" />
+                          </video>
+                          <center>
+                            <div class="card video">
+                              <div class="card-body-12 pb-2 pt-2">
+                                <a href="#" onclick="setCurTime1_2(1)" class="badge badge-primary btnvideo ml-2 mr-2">Pendahuluan</a>
+                                <a href="#" onclick="setCurTime1_2(2)" class="badge badge-primary btnvideo ml-2 mr-2">Alat dan Bahan</a>
+                                <a href="#" onclick="setCurTime1_2(3)" class="badge badge-primary btnvideo ml-2 mr-2">Cara Kerja</a>
+                              </div>
+                            </div>
+                          </center>
+                        </div>
+                        <br />
+                        <center>
+                          <br />
+                          <div class="petunjuk">
+                            Setelah menyimak dan memperhatikan video di atas, silahkan buat video uji coba mandiri. video uji coba di upload ke youtube dan link nya silahkan submit pada form berikut.
+                            <input type="file" id="UnggahFile" />
+                          </div>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion4">
+                  <h2 class="accordion-header" id="panelsStayOpen-heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="true" aria-controls="panelsStayOpen-collapse4" style="font-weight: bold">
+                      <img src="/img/kids.png" width="40px" />Ayo menalar
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
+                    <div class="accordion-body">
+                      <div class="Kotak">
+                        Jawablah pertanyaan dibawah ini dengan cara klik kotak jawaban yang ada di kolom Pendapatku! Lalu klik tombol Cek Jawaban Jika jawabanmu benar maka akan ditampilkan teks Jawaban Kamu benar! beserta dengan
+                        penjelasannya. Sedangkan jika jawabanmu salah maka akan ditampilkan teks Jawaban Kamu salah! beserta dengan penjelasannya
+
+                        <div class="bord">
+                          <br />
+                          <table class="table tablecek table-bordered container text-center" style="border: 1px solid">
+                            <thead style="background-color: #ff3232">
+                              <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Pertanyaan</th>
+                                <th scope="col">Benar</th>
+                                <th scope="col">Salah</th>
+                                <th scope="col">Keterangan</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Magnet memiliki 2 kutub</td>
+                                <td class="text-center"><input type="checkbox" onclick="cekBMagnet();" style="width: 20px; height: 20px" name="magent" id="bmagnet" /></td>
+                                <td class="text-center"><input type="checkbox" onclick="cekSMagnet();" style="width: 20px; height: 20px" name="magnet" id="smagnet" /></td>
+                                <td><span class="cekMagnet" style="font-weight: bold"></span></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Apakah semua benda mempunyai gaya magnet?</td>
+                                <td class="text-center"><input type="checkbox" onclick="cekSGaya();" style="width: 20px; height: 20px" name="gaya" id="sgaya" /></td>
+                                <td class="text-center"><input type="checkbox" onclick="cekBGaya();" style="width: 20px; height: 20px" name="gaya" id="bgaya" /></td>
+                                <td><span class="cekGaya mr-2" style="font-weight: bold"></span></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Bisakah kita membuat magnet secara sederhana</td>
+                                <td class="text-center"><input type="checkbox" onclick="cekBMembuat();" style="width: 20px; height: 20px" name="membuat" id="bmembuat" /></td>
+                                <td class="text-center"><input type="checkbox" onclick="cekSMembuat();" style="width: 20px; height: 20px" name="membuat" id="smembuat" /></td>
+                                <td><span class="cekMembuat mr-2" style="font-weight: bold"></span></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>Apakah gaya magnet bisa abadi?</td>
+                                <td class="text-center"><input type="checkbox" onclick="cekSAbadi();" style="width: 20px; height: 20px" name="abadi" id="sabadi" /></td>
+                                <td class="text-center"><input type="checkbox" onclick="cekBAbadi();" style="width: 20px; height: 20px" name="abadi" id="babadi" /></td>
+                                <td><span class="cekAbadi mr-2" style="font-weight: bold"></span></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>Apakah garis magnet bisa berubah-rubah?</td>
+                                <td class="text-center"><input type="checkbox" onclick="cekSBerubah();" style="width: 20px; height: 20px" name="berubah" id="sberubah" /></td>
+                                <td class="text-center"><input type="checkbox" onclick="cekBBerubah();" style="width: 20px; height: 20px" name="berubah" id="bberubah" /></td>
+                                <td><span class="cekBerubah mr-2" style="font-weight: bold"></span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion5">
+              <h2 class="accordion-header" id="panelsStayOpen-heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5" style="font-weight: bold">
+                  <img src="/img/speaking.png" width="40px" />Ayo Mengkomunikasikan
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
+                <div class="accordion-body">
+                  <div class="Kotak">
+                    Pada akhir materi ini, siswa diminta menuliskan kesimpulan terkait materi yang sudah dipelajari.
+                    <br />
+                    <center>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Pengumpulan Kesimpulan</button>
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Lembar Kerja</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="tujuan" id="tujuan">
+                    Petunjuk Pengerjaan
+                    <li>Perhatikan dan ikuti petunjuk pengisian Lembar Kerja yang sudah disediakan</li>
+                    <li>Periksa dan bacalah soal-soal sebelum anda menjawab</li>
+                    <li>Dahulukan mengerjakan soal-soal yang anda anggap mudah</li>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="exampleFormControlnama1" class="form-label">Nama:</label>
+                      <input type="Nama" class="form-nama1" id="exampleFormControlnama1" placeholder="Nama" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlnisn" class="form-label">NISN : </label>
+                      <input type="NISN" class="form-nisn1" id="exampleFormControlnisn1" placeholder="NISN" />
+                    </div>
+                    <hr />
+                    <div class="mb-3">
+                      <p>Jawablah pertanyaan berikut berdasarkan hasil pengamatan materi diatas.</p>
+                      <label for="exampleFormControlkesimpulan" class="form-label">Apakah gaya magnet dapat menarik besi? jelaskan!</label>
+                      <textarea class="form-control" id="exampleFormControlkkesimpulan" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlkesimpulan" class="form-label">Bagaimana Membuat Magnet</label>
+                      <textarea class="form-control" id="exampleFormControlkkesimpulan" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlkesimpulan" class="form-label">Kesimpulan</label>
+                      <textarea class="form-control" id="exampleFormControlkkesimpulan" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" href="#">Kirim</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mt-2">
+          <li class="page-item"><a class="page-link" href="home.html">Sebelumnya</a></li>
+          <li class="page-item"><a class="page-link" href="kuis1.html">Selanjutnya Kuis</a></li>
+        </ul>
+      </nav>
+
+      <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+          arrow[i].addEventListener("click", (e) => {
+            let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+            arrowParent.classList.toggle("showMenu");
+          });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+          sidebar.classList.toggle("close");
+        });
+      </script>
+      <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script src="/js/materi_a.js"></script>
+      <script src="/js/navigasi.js"></script>
+      <script src="/json/kuis1.json"></script>
+
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+
+      <!-- Firebase -->
+      <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js"></script>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <title>Ilmu Pengetahuan Alam dan Sosial</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxs-magnet"></i>
+        <span class="logo_name">Isi Pelajaran</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="home.html">
+            <i class="bx bx-book"></i>
+            <span class="link_name">Home</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="home.html">Home</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="materi_a.html">
+              <i class="bx bx-book-reader"></i>
+              <span class="link_name">Topik A</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_a.html">Topik A : Apa dan Untuk apa Magnet Diciptakan?</a></li>
+            <li><a href="kuis1.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="materi_b.html">
+              <i class="bx bx-folder-open"></i>
+              <span class="link_name">Topik B</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_b.html">Topik B : Bagaimana cara mendapatkan Energi Listrik</a></li>
+            <li><a href="kuis2.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="materi_c.html">
+              <i class="bx bx-book-open"></i>
+              <span class="link_name">Topik C</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_c.html">Topik C : Teknologi Untuk kehidupan</a></li>
+            <li><a href="kuis3.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Evaluasi</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="evaluasi.html">Evaluasi</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <img src="/img/user.png" alt="profileImg" />
+            </div>
+            <div class="nama-nisn">
+              <div id="userlink" class="nama"></div>
+              <div id="nisnlink" class="nisn"></div>
+            </div>
+            <a href="index.html"> <i class="bx bx-log-out"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <span class="text">Ilmu Pengetahuan Alam dan Sosial</span>
+      </div>
+
+      <div id="content">
+        <div class="kliktujuanpembelajaran"></div>
+        <img src="/img/Materi.png" width="40" height="40" />Tujuan Pembelajaran<br />
+        <div class="tujuan" id="tujuan">
+          <ol type="">
+            <li>Peserta didik mengidentifikasi benda dan peralatan disekitar yang menetapkan prinsip teknologi agar dapat berfungsi.</li>
+            <li>Peserta didik mendemonstrasikan penggunaan teknologi untuk menyelesaikan tantangan dalam kehidupanan sehari-hari.</li>
+            <li>Peserta didik mengaitkan penggunaan energi listrik dalam berbagai untuk teknologi</li>
+          </ol>
+        </div>
+        <br />
+        <!-- Accordion 1 -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="font-weight: bold">
+                <img src="/img/openbook1.png" alt="" width="40px" /> Ayo Mengamati
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="Kotak">
+                <div class="card-body">
+                  <h5 class="text-Center text-succes"></h5>
+                  <p>
+                    Apa yang kalian ketahui tentang teknologi? Teknologi adalah penerapan dari ilmu pengetahuan yang membantu kita menyelesaikan permasalahan dalam kehidupan sehari-hari (Britannica, 2020). Contohnya, ketika malam tiba,
+                    keadaan di sekitar kita menjadi gelap. Oleh karena itu, para ilmuwan menciptakan teknologi lampu sehingga pada saat malam hari menjadi terang. Ketika kita sulit melakukan perjalanan jauh, ilmuwan menciptakan kendaraan
+                    bermotor agar kita bisa melakukan perjalanan jauh tanpa kelelahan. Ketika kita tidak memiliki tempat berteduh, maka orang-orang terdahulu membuat bangunan dari tanah liat yang dicetak, dikeringkan dan disusun. Pembuatan
+                    rumah juga merupakan bagian dari penerapan ilmu pengetahuan, sehingga proses membuat rumah juga merupakan bentuk teknologi
+                  </p>
+                  <div class="accordion-body">
+                    <center>
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/O4YHcWAVEig"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </center>
+
+                    <!-- Soal Latihan -->
+                    <h5 class="text-succes"></h5>
+                    <br />
+                    <div class="latihan">
+                      <div class="petunjuk">
+                        <h5><b>&nbsp;Petunjuk Pengerjaan :</b></h5>
+                        <ol>
+                          <li>Untuk memahami materi di atas, silahkan jawab pertanyaan di bawah ini!</li>
+                          <li>Jawablah pertanyaan dengan mengklik salah satu jawaban yang dianggap benar!</li>
+                          <li>Klik tombol <span style="color: white; background-color: #165b86; border-radius: 10px; border: 3px double white; padding: 3px">Cek Jawaban</span> untuk mengetahui jawaban benar atau salah.</li>
+                          <li>Jika jawabanmu benar, muncul keterangan "<span style="color: green">Jawaban Benar</span>".</li>
+                          <li>Jika jawabanmu salah, muncul keterangan "<span style="color: red">Jawaban Salah</span>".</li>
+                          <li>Klik tombol <span style="color: white; background-color: #165b86; border-radius: 10px; border: 3px double white; padding: 3px">Coba Lagi</span> untuk mencoba kembali.</li>
+                        </ol>
+                      </div>
+                      <br />
+                      <div class="isiKuis">
+                        <form name="quiz">
+                          <ol>
+                            <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                              Contoh teknologi dalam sehari-hari yaitu ...
+                              <span id="ket-no0"></span>
+                              <br />
+                            </li>
+                            <input class="td-" type="radio" name="q1" value="a" id="a" />
+                            <label style="padding: 3px" for="a">a. Besi</label>
+                            <br />
+                            <input class="td-" type="radio" name="q1" value="b" id="b" />
+                            <label style="padding: 3px" for="b">b. Alumunium</label>
+                            <br />
+                            <input class="td-" type="radio" name="q1" value="c" id="c" />
+                            <label style="padding: 3px" for="c">c. Strika</label>
+                            <br />
+
+                            <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                              Suhu apa yang dihasilkan oleh strika ketika dicolokkan kelistrik?
+                              <span id="ket-no1"></span>
+                              <br />
+                            </li>
+                            <input class="td-" type="radio" name="q2" value="a" id="a" />
+                            <label style="padding: 3px" for="a">a. Dingin</label>
+                            <br />
+                            <input class="td-" type="radio" name="q2" value="b" id="b" />
+                            <label style="padding: 3px" for="b">b. Panas</label>
+                            <br />
+                            <input class="td-" type="radio" name="q2" value="c" id="c" />
+                            <label style="padding: 3px" for="c">c. Benar semua</label>
+                            <br />
+
+                            <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                              Benda yang mengalami perubahan energi gerak adalah . . . .
+                              <span id="ket-no2"></span>
+                              <br />
+                            </li>
+                            <input class="td-" type="radio" name="q3" value="a" id="a" />
+                            <label style="padding: 3px" for="a">a. Dispenser</label>
+                            <br />
+                            <input class="td-" type="radio" name="q3" value="b" id="b" />
+                            <label style="padding: 3px" for="b">b. Kipas Angin</label>
+                            <br />
+                            <input class="td-" type="radio" name="q3" value="c" id="c" />
+                            <label style="padding: 3px" for="c">c. Rice Cooker</label>
+                            <br />
+
+                            <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                              Pemanfaatan sumber energi yang digunakan untuk menghasilkan energi cahaya pada lampu petormak adalah...
+                              <span id="ket-no3"></span>
+                              <br />
+                            </li>
+                            <input class="td-" type="radio" name="q4" value="a" id="a" />
+                            <label style="padding: 3px" for="a">a. Minyak Bumi</label>
+                            <br />
+                            <input class="td-" type="radio" name="q4" value="b" id="b" />
+                            <label style="padding: 3px" for="b">b. Panas Bumi</label>
+                            <br />
+                            <input class="td-" type="radio" name="q4" value="c" id="c" />
+                            <label style="padding: 3px" for="c">c. Gas Alam</label>
+                            <br />
+
+                            <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                              Contoh dari pemanfaatan sumber energi air adalah...
+                              <span id="ket-no4"></span>
+                              <br />
+                            </li>
+                            <input class="td-" type="radio" name="q5" value="a" id="a" />
+                            <label style="padding: 3px" for="a">a. PLTB</label>
+                            <br />
+                            <input class="td-" type="radio" name="q5" value="b" id="b" />
+                            <label style="padding: 3px" for="b">b. PLTN</label>
+                            <br />
+                            <input class="td-" type="radio" name="q5" value="c" id="c" />
+                            <label style="padding: 3px" for="c">c. PLTA</label>
+                            <br />
+                          </ol>
+                          <center>
+                            <p id="ket" class="center ket-jwbn"></p>
+                            <div class="left ket2" id="ket2"></div>
+
+                            <div class="center">
+                              <input type="button" class="button-utama" value="Cek Jawaban " onclick="getScore(this.form);" />
+                              <input id="reset" type="reset" class="button-utama" value="Coba Lagi" />
+                            </div>
+                          </center>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="ms-4">
+                    <form>
+                      <label for="no1">1. Contoh teknologi dalam sehari-hari yaitu ...</label><br />
+                      <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="no1" />Besi<br />
+                        <input class="form-check-input" type="radio" name="no1" id="jno1" />Strika<br />
+                        <input class="form-check-input" type="radio" name="no1" />Alumunium<br />
+                      </div>
+                      <div id="rnol1" class="d-inline-flex p-1 rounded"></div>
+                      <br />
+                      <label for="no2">2. Suhu apa yang dihasilkan oleh strika ketika dicolokkan kelistrik?</label><br />
+                      <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="no2" />Dingin<br />
+                        <input class="form-check-input" type="radio" name="no2" id="jno2" />Panas<br />
+                        <input class="form-check-input" type="radio" name="no2" />benar semua<br />
+                      </div>
+                      <div id="rnol2" class="d-inline-flex p-1 rounded"></div>
+                      <br />
+                      <label for="no3"
+                        >3. Nelayan ikan dengan skala besar yang beroperasi di kawasan Asia Tenggara memanfaatkan data cuaca, suhu, arah angin untuk mencari ikan di lautan. Fenomena ini berkaitan dengan faktor yang mempengarui interaksi
+                        antarruang, yaitu . . . .</label
+                      ><br />
+                      <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="no3" />Faktor Geologi<br />
+                        <input class="form-check-input" type="radio" name="no3" id="jno3" />Faktor Iklim<br />
+                        <input class="form-check-input" type="radio" name="no3" />Faktor ketersediaan sumber daya<br />
+                      </div>
+                      <div id="rnol3" class="d-inline-flex p-1 rounded"></div>
+                      <br />
+                      <label for="no4">4. Pemanfaatan sumber energi yang digunakan untuk menghasilkan energi cahaya pada lampu petormak adalah...</label><br />
+                      <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="no4" id="jno4" />Minyak Bumi<br />
+                        <input class="form-check-input" type="radio" name="no4" />Panas Bumi<br />
+                        <input class="form-check-input" type="radio" name="no4" />Gas Alam<br />
+                      </div>
+                      <div id="rnol4" class="d-inline-flex p-1 rounded"></div>
+                      <br />
+                      <label for="no5">5. Contoh dari pemanfaatan sumber energi air adalah...</label><br />
+                      <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="no5" /> PLTB<br />
+                        <input class="form-check-input" type="radio" name="no5" />PLTN<br />
+                        <input class="form-check-input" type="radio" name="no5" id="jno5" />PLTA<br />
+                      </div>
+                      <div id="rnol4" class="d-inline-flex p-1 rounded"></div>
+                      <br />
+                    </form>
+                  </div>
+                  <p class="text-end"><button class="btn btn-primary btn-md" type="submit" id="selesai">Selesai</button></p> -->
+                </div>
+              </div>
+            </div>
+            <!-- Akhir Accordion -->
+
+            <!-- Accordion 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="font-weight: bold">
+                  <img src="/img/openbook.png" width="40px" /> Ayo Menanya
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="Kotak">
+                  <div class="card-body">
+                    <div class="clearfix">
+                      <h4 class="text-Center" style="text-align: center">Cerita Tentang Teknologi</h4>
+                      <div class="col-md-6 float-md-end mb-3 ms-md-3">
+                        <div class="cborder-0 rounded float-end">
+                          <img src="/img/james watt.jpeg" alt="James Watt" class="filter-gambar" style="width: 90%" height="60%" />
+
+                          <p class="pt-2 pb-0"></p>
+                          <p class="text-center">
+                            <small><b>James Watt</b></small>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card-text text-justify" style="text-align: justify">
+                        <p>
+                          Dalam bentuk yang paling sederhana, teknologi telah diterapkan sejak 3,3 juta tahun yang lalu. Manusia purba menggunakan batu yang tajam sebagai alat untuk memotong dan batu yang tumpul sebagai palu. Seiring
+                          berjalannya waktu, manusia mulai mengembangkan teknologi untuk berbagai keperluan. Tidak hanya untuk berburu dan mencari makan, namun juga untuk bercocok tanam (menghasilkan makanan), membuat peralatan dari besi,
+                          berlayar, dan menjelajah lautan manusia menciptakan alat-alat, seperti kincir angin, kompas, jam mekanik, dan mesin cetak.
+                        </p>
+                        <p>
+                          Perkembangan teknologi semakin pesat ketika James Watt, seorang berkebangsaan Skotlandia menciptakan mesin uap untuk pertama kalinya di tahun 1765. Ia berhasil memanfaatkan uap bertekanan untuk menggerakkan mesin.
+                          Temuannya ini menjadi cikal bakal lahirnya revolusi industri 2.0 yang mengubah dunia. Teknologi yang ditemukan James Watt memicu penciptaan dan penggunaan mesin untuk keperluan industri maupun transportasi, seperti
+                          kereta api, kapal bertenaga uap, dan mobil.
+                        </p>
+                        <p>
+                          Bentuk teknologi lainnya yang mengubah kehidupan di dunia, yaitu penggunaan energi listrik untuk penerangan yang dicetuskan oleh Thomas Edison pada tahun 1879 (Britannica, 2020). Tiga tahun setelahnya, Edison
+                          membangun pembangkit listrik untuk pertama kalinya dan hal ini memicu produksi listrik dalam skala besar. Perkembangan teknologi menjadi semakin pesat setelahnya. Banyak temuan baru yang ditemukan, seperti
+                          kendaraan Dalam bidang telekomunikasi, di tahun 1844 untuk pertama kalinya ditemukan mesin telegraf. Penemuan terus berlanjut hingga di tahun 1876 ditemukan telepon oleh Alexander Graham Bell, radio di tahun 1901
+                          oleh Guglielmo Marconi, dan televisi 16 tahun setelahnya oleh Philo T. Fransworth.
+                        </p>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                          <div class="col">
+                            <div class="card h-100">
+                              <img src="/img/Alexander Graham Bell dan telepon.png" class="card-img-top" alt="Alexander Graham" />
+                              <div class="card-body">
+                                <h5 class="card-title">Alexander Graham Bell dan telepon</h5>
+                                <p class="card-text">Ia adalah seorang ilmuwan, pencipta, dan pendiri perusahaan telepon yang berasal dari Amerika yang dikenal sebagai penemu telepon.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card h-100">
+                              <img src="/img/Guglielmo Marconi dan radio.png " class="card-img-top" alt="Guglielmo" />
+                              <div class="card-body">
+                                <h5 class="card-title">Guglielmo Marconi dan radio</h5>
+                                <p class="card-text">dikenal setelah sukses mengembangkan telegrafi (pengiriman pesan memakai huruf atau angka) tanpa kabel, yang kemudian disebut radio.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card h-100">
+                              <img src="/img/Philo T. Farnsworth dan televisi.png" class="card-img-top" alt="Philo T." />
+                              <div class="card-body">
+                                <h5 class="card-title">Philo T. Farnsworth dan televisi.</h5>
+                                <p class="card-text">menemukan sistem televisi elektronik sempurna pertama, termasuk alat penerimaan gambar elektronik pertama yang berfungsi (tabung kamera video),</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br />
+                        <p>
+                          Berkat peran para ilmuwan, kita bisa menikmati kehidupan yang penuh dengan teknologi seperti saat ini. Dahulu, jika kita ingin melakukan perjalanan yang sangat jauh, kita membutuhkan waktu berhari-hari atau bahkan
+                          berbulan bulan. Dengan adanya teknologi transportasi, kini kita bisa bepergian jauh menggunakan pesawat hanya dalam beberapa jam saja. Adanya teknologi di masa kini juga membantu kita berkomunikasi dengan orang
+                          lain yang berjauhan dengan sangat mudah. Cukup menggunakan ponsel pintar, kita bisa menghubungi siapapun dan di manapun tanpa kesulitan.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Latihan Menanya -->
+                    <p class="text-black mt-3 ms-2 p-2 bg-light border-danger border rounded">
+                      Buatlah pertanyaan dan jawaban berdasarkan proses membuat magnet sendiri pada kotak jawaban yang sudah disediakan! Lihat pada contoh soal nomor 1
+                    </p>
+                    <div class="row">
+                      <div class="col-1 text-end pe-0 me-0"><p>1.</p></div>
+                      <div class="col-11 ps-0 ms-0">
+                        <p>
+                          Seberapa penting listrik bagi kehidupan kita?<br />Jawab:<br />Bagi orang-orang yang sudah mendapatkan akses listrik, energi ini sudah jadi bagian dari hidup mereka dan sulit untuk dipisahkan. Aktivitas di rumah,
+                          perkantoran, rumah sakit, semua membutuhkan listrik. Ini yang menyebabkan energi ini sangat penting.
+                        </p>
+                      </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                      <div class="col-1 text-end pe-0 me-0"><p>2.</p></div>
+                      <div class="col-11 ps-0 ms-0">
+                        <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p2" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j2" /></p>
+                      </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                      <div class="col-1 text-end pe-0 me-0"><p>3.</p></div>
+                      <div class="col-11 ps-0 ms-0">
+                        <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p3" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j3" /></p>
+                      </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                      <div class="col-1 text-end pe-0 me-0"><p>4.</p></div>
+                      <div class="col-11 ps-0 ms-0">
+                        <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p4" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j4" /></p>
+                      </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                      <div class="col-1 text-end pe-0 me-0"><p>5.</p></div>
+                      <div class="col-11 ps-0 ms-0">
+                        <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p5" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j5" /></p>
+                      </div>
+                    </div>
+                    <p class="text-end"><button class="btn btn-primary btn-md" type="submit" id="selesai">Selesai</button></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="font-weight: bold">
+                  <img src="/img/openbook2.png" width="40px" />Ayo Mencoba
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <div class="Kotak">
+                    <div class="col">
+                      <h4 class="text-Center" style="text-align: center">Memahami dan Menjelaskan Teknologi dalam Kehidupan</h4>
+                      <p class="fw-bold"></p>
+                      <p>Setelah menyimak dan memperhatikan video di atas, silahkan melakukan percobaan mandiri tentang Teknologi Kehidupan. Video penjelasan maksimal 3 menit dan silahkan di upload pada form di bawah ini.</p>
+                    </div>
+
+                    <center><input type="file" id="UnggahFile" /></center>
+                    <br />
+                    <!-- <div class="row">
+                      <div class="table-responsive-sm">
+                        <table class="col-sm-5 table container text-center" style="border: 1px solid">
+                          <thead style="background-color: #ff3232">
+                            <tr>
+                              <th scope="col1" class="col-sm-2"></th>
+                              <th scope="col1" class="col-sm-2"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="col-sm-1"><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                              <td class="col-sm-1"><img id="drag1" src="/img/besi.png" draggable="true" ondragstart="drag(event)" width="336" height="69" /></td>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <td class="col-sm-1"><div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                              <td class="col-sm-1"><img id="drag2" src="/img/lampu.png" draggable="true" ondragstart="drag(event)" width="336" height="69" /></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Akhir Accordion -->
+
+              <div class="accordion4">
+                <h2 class="accordion-header" id="panelsStayOpen-heading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="true" aria-controls="panelsStayOpen-collapse4" style="font-weight: bold">
+                    <img src="/img/kids.png" width="40px" />Ayo menalar
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
+                  <div class="accordion-body">
+                    <p class="text-black mt-5 ms-2 p-2 bg-light border-danger border rounded">
+                      Jawablah pertanyaan dibawah ini dengan cara klik kotak jawaban yang ada di kolom Pendapatku! Lalu klik tombol Cek Jawaban Jika jawabanmu benar maka akan ditampilkan teks Jawaban Kamu benar! beserta dengan
+                      penjelasannya. Sedangkan jika jawabanmu salah maka akan ditampilkan teks Jawaban Kamu salah! beserta dengan penjelasannya
+                    </p>
+                    <div class="row">
+                      <div class="table-responsive-sm">
+                        <table class="col-10 table table-bordered container text-center" style="border: 1px solid">
+                          <thead style="background-color: #ff3232">
+                            <tr>
+                              <th scope="col1" class="col-sm-2">No</th>
+                              <th scope="col2" class="col-sm-2">Pertanyaan</th>
+                              <th scope="col3" class="col-sm-2">Salah</th>
+                              <th scope="col4" class="col-sm-2">Benar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="col-sm-1">1</td>
+                              <td class="col-sm-5">Magnet memiliki 2 kutub</td>
+                              <td class="col-sm-2">
+                                <input id="baris1" type="checkbox" style="width: 30px; height: 30px" />
+                              </td>
+                              <td class="col-sm-2">
+                                <input id="baris1" type="checkbox" style="width: 30px; height: 30px" />
+                                <p id="respon1" class="text-center p-0 m-0 fw-bold" style="font-size: 10pt"></p>
+                                <p id="respon2" class="text-center p-0 m-0 fw-bold" style="font-size: 10pt"></p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="col-sm-1">2</td>
+                              <td class="col-sm-5">Apakah semua benda mempunyai gaya magnet?</td>
+                              <td class="col-sm-2">
+                                <input id="baris2" type="checkbox" style="width: 30px; height: 30px" />
+                              </td>
+                              <td class="col-sm-2">
+                                <input id="baris2" type="checkbox" style="width: 30px; height: 30px" />
+                                <p id="respon2" class="text-center p-0 m-0 fw-bold" style="font-size: 10pt"></p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="col-sm-1">3</td>
+                              <td class="col-sm-5">Bisakah kita membuat magnet secara sederhana</td>
+                              <td class="col-sm-2">
+                                <input id="baris3" type="checkbox" style="width: 30px; height: 30px" />
+                              </td>
+                              <td class="col-sm-2">
+                                <input id="baris3" type="checkbox" style="width: 30px; height: 30px" />
+                                <p id="respon3" class="text-center p-0 m-0 fw-bold" style="font-size: 10pt"></p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="col-sm-1">4</td>
+                              <td class="col-sm-5">Apakah gaya magnet bisa abadi?</td>
+                              <td class="col-sm-2">
+                                <input id="baris4" type="checkbox" style="width: 30px; height: 30px" />
+                              </td>
+                              <td class="col-sm-2">
+                                <input id="baris4" type="checkbox" style="width: 30px; height: 30px" />
+                                <p id="respon4" class="text-center p-0 m-0 fw-bold" style="font-size: 10pt"></p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="col-sm-1">5</td>
+                              <td class="col-sm-5">Apakah garis magnet bisa berubah?</td>
+                              <td class="col-sm-2">
+                                <input id="baris5" type="checkbox" style="width: 30px; height: 30px" />
+                              </td>
+                              <td class="col-sm-2">
+                                <input id="baris5" type="checkbox" style="width: 30px; height: 30px" />
+                                <p id="respon4" class="text-center p-0 m-0 fw-bold" style="font-size: 10pt"></p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <button class="btn btn-primary float-end" onclick="cekJawaban()">Cek Jawaban</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion5">
+                <h2 class="accordion-header" id="panelsStayOpen-heading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5" style="font-weight: bold">
+                    <img src="/img/speaking.png" width="40px" />Ayo Mengkomunikasikan
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
+                  <div class="accordion-body text-black mt-5 ms-2 p-2 bg-light border-danger border rounded">Pada akhir materi ini, siswa diminta menuliskan kesimpulan terkait materi yang sudah dipelajari.</div>
+                  <br />
+                  <center>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Pengumpulan Kesimpulan</button>
+                  </center>
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Lembar Kerja</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="exampleFormControlnama1" class="form-label">Nama:</label>
+                            <input type="Nama" class="form-nama1" id="exampleFormControlnama1" placeholder="Nama" />
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlnisn" class="form-label">NISN : </label>
+                            <input type="NISN" class="form-nisn1" id="exampleFormControlnisn1" placeholder="NISN" />
+                          </div>
+                          <hr />
+                          <div class="mb-3">
+                            <p>Jawablah pertanyaan berikut berdasarkan hasil pengamatan materi diatas.</p>
+                            <label for="exampleFormControlkesimpulan" class="form-label">Perubahan Energi pada mesin cuci adalah ...</label>
+                            <textarea class="form-control" id="exampleFormControlkkesimpulan" rows="3"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlkesimpulan" class="form-label">Bagaimana radio mengalami perubahan energi listrik menjadi energi ...</label>
+                            <textarea class="form-control" id="exampleFormControlkkesimpulan" rows="3"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlkesimpulan" class="form-label">Kesimpulan</label>
+                            <textarea class="form-control" id="exampleFormControlkkesimpulan" rows="3"></textarea>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" href="#">Kirim</button>
+                        </div>
+                      </div>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mt-2">
+          <li class="page-item"><a class="page-link" href="index.html">Sebelumnya</a></li>
+          <li class="page-item"><a class="page-link" href="kuis3.html">Selanjutnya</a></li>
+        </ul>
+      </nav>
+    </section>
+    <script>
+      let arrow = document.querySelectorAll(".arrow");
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+          arrowParent.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+    </script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+      // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCplY14r_usHBnV0q4fN9yLFB17F0rFcY4",
+        authDomain: "skripsi-1ebb7.firebaseapp.com",
+        databaseURL: "https://skripsi-1ebb7-default-rtdb.firebaseio.com",
+        projectId: "skripsi-1ebb7",
+        storageBucket: "skripsi-1ebb7.appspot.com",
+        messagingSenderId: "95532009828",
+        appId: "1:95532009828:web:692b1f60263f77340ad271",
+        measurementId: "G-2X999JFXEX",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      import { getDatabase, ref, set, child, get, onChildAdded } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+      const db = getDatabase();
+
+      //referensi//
+      let namalink = document.getElementById("userlink");
+      let nama = sessionStorage.getItem("nama");
+      namalink.innerText = nama;
+      let nisnlink = document.getElementById("nisnlink");
+
+      let nisn = sessionStorage.getItem("nisn");
+      nisnlink.innerText = nisn;
+      var currentUser = null;
+
+      // Function;
+      function getNama() {
+        if (nama == null) {
+          window.location = "index.html";
+        } else {
+          userlink.innerText = nama;
+        }
+      }
+
+      function getNisn() {
+        if (nisn == null) {
+          window.location = "index.html";
+        } else {
+          nisnlink.innerText = nisn;
+        }
+      }
+
+      getNama();
+      getNisn();
+
+      function LogOut() {
+        sessionStorage.removeItem("nama");
+
+        window.location = "index.html";
+      }
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/js/materi_c.js"></script>
+    <script src="/js/navigasi.js"></script>
+    <script src="/json/kuis3.json"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+  </body>
+</html>

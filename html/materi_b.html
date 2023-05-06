@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <title>Ilmu Pengetahuan Alam dan Sosial</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxs-magnet"></i>
+        <span class="logo_name">Isi Pelajaran</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="home.html">
+            <i class="bx bx-home-alt"></i>
+            <span class="link_name">Home</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="home.html">Home</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="materi_a.html">
+              <i class="bx bx-book"></i>
+              <span class="link_name">Topik A</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_a.html">Topik A : Apa dan Untuk apa Magnet Diciptakan?</a></li>
+            <li><a href="kuis1.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="materi_b.html">
+              <i class="bx bx-book-reader"></i>
+              <span class="link_name">Topik B</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_b.html">Topik B : Bagaimana cara mendapatkan Energi Listrik</a></li>
+            <li><a href="kuis2.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="materi_c.html">
+              <i class="bx bx-book-open"></i>
+              <span class="link_name">Topik C</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="materi_c.html">Topik C : Teknologi Untuk kehidupan</a></li>
+            <li><a href="kuis3.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Evaluasi</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="evaluasi.html">Evaluasi</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <img src="/img/user.png" alt="profileImg" />
+            </div>
+            <div class="nama-nisn">
+              <div id="userlink" class="nama"></div>
+              <div id="nisnlink" class="nisn"></div>
+            </div>
+            <a href="index.html"> <i class="bx bx-log-out"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <span class="text">Ilmu Pengetahuan Alam dan Sosial</span>
+      </div>
+
+      <div id="content">
+        <div class="kliktujuanpembelajaran"></div>
+        <img src="/img/Materi.png" width="40" height="40" />Tujuan Pembelajaran<br />
+        <div class="tujuan" id="tujuan">
+          <ol type="">
+            <li>Peserta didik Mendeskripsikan apa itu energi listrik dan pamanfataan listrik dalam kehidupan sehari-hari.</li>
+            <li>Peserta mendemonstrasikan bagaimana listrik diproduksi dan dialirkan</li>
+            <li>Peserta mencari tahu ragam jenis pembangkit listrik.</li>
+          </ol>
+        </div>
+        <br />
+        <!-- Accordion 1 -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="font-weight: bold">
+                <img src="/img/openbook1.png" alt="" width="40px" /> Ayo Mengamati
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="Kotak">
+                <div class="card-body">
+                  <h5 class="text-Center text-succes"></h5>
+                  <p>
+                    Apakah kalian tahu apa itu listrik? Ya betul, Energi listrik adalah salah satu bentuk energi yang sering kita gunakan dalam kehidupan sehari-hari. Adanya energi listrik dan teknologi-teknologi tertentu membantu kita
+                    menjalani berbagai aktivitas, seperti belajar, memasak, membersihkan rumah, berkomunikasi, bepergian, dan sebagainya. Yuk kita pelajari lebih lanjut..
+                  </p>
+
+                  <div class="accordion-body">
+                    <div class="text-center">
+                      <video controls id="video1_1" class="video">
+                        <source src="/Video/Perubahan Energi Listrik1.mp4" type="video/webm" />
+                      </video>
+                      <center>
+                        <div class="card video">
+                          <div class="card-body-12 pb-2 pt-2">
+                            <a href="#" onclick="setCurTime1_1(1)" class="badge badge-primary btnvideo ml-2 mr-2">Pendahuluan</a>
+                            <a href="#" onclick="setCurTime1_1(2)" class="badge badge-primary btnvideo ml-2 mr-2">Alat dan Bahan</a>
+                            <a href="#" onclick="setCurTime1_1(3)" class="badge badge-primary btnvideo ml-2 mr-2">Cara Kerja</a>
+                          </div>
+                        </div>
+                      </center>
+                    </div>
+                    <br />
+                    <div class="latihan">
+                      <div class="petunjuk">
+                        <h5><b>&nbsp;Petunjuk Pengerjaan :</b></h5>
+                        <ol>
+                          <li>Untuk memahami materi di atas, silahkan jawab pertanyaan di bawah ini!</li>
+                          <li>Jawablah pertanyaan dengan mengklik salah satu jawaban yang dianggap benar!</li>
+                          <li>Klik tombol <span style="color: white; background-color: #0a406a; border-radius: 10px; border: 3px double white; padding: 3px">Cek Jawaban</span> untuk mengetahui jawaban benar atau salah.</li>
+                          <li>Jika jawabanmu benar, muncul keterangan "<span style="color: green">Jawaban Benar</span>".</li>
+                          <li>Jika jawabanmu salah, muncul keterangan "<span style="color: red">Jawaban Salah</span>".</li>
+                          <li>Klik tombol <span style="color: white; background-color: #0a406a; border-radius: 10px; border: 3px double white; padding: 3px">Coba Lagi</span> untuk mencoba kembali.</li>
+                        </ol>
+                      </div>
+                      <br />
+                    </div>
+                    <!-- Soal Latihan -->
+                    <div class="isiKuis">
+                      <form name="quiz">
+                        <ol>
+                          <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                            Sumber energi panas terbesar bagi makhluk hidup di bumi adalah …
+                            <span id="ket-no0"></span>
+                            <br />
+                          </li>
+                          <input class="td-" type="radio" name="q1" value="a" id="a" />
+                          <label style="padding: 3px" for="a">a. Matahari</label>
+                          <br />
+                          <input class="td-" type="radio" name="q1" value="b" id="b" />
+                          <label style="padding: 3px" for="b">b. Hutan</label>
+                          <br />
+                          <input class="td-" type="radio" name="q1" value="c" id="c" />
+                          <label style="padding: 3px" for="c">c. Angin</label>
+                          <br />
+
+                          <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                            Alat pengukur suhu adalah....
+                            <span id="ket-no1"></span>
+                            <br />
+                          </li>
+                          <input class="td-" type="radio" name="q2" value="a" id="a" />
+                          <label style="padding: 3px" for="a">a. TERMOMETER</label>
+                          <br />
+                          <input class="td-" type="radio" name="q2" value="b" id="b" />
+                          <label style="padding: 3px" for="b">b. KALORIMETER</label>
+                          <br />
+                          <input class="td-" type="radio" name="q2" value="c" id="c" />
+                          <label style="padding: 3px" for="c">c. PENGGARIS</label>
+                          <br />
+
+                          <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                            Berikut ini yang bukan termasuk sumber energi panas adalah ….
+                            <span id="ket-no2"></span>
+                            <br />
+                          </li>
+                          <input class="td-" type="radio" name="q3" value="a" id="a" />
+                          <label style="padding: 3px" for="a">a.Matahari</label>
+                          <br />
+                          <input class="td-" type="radio" name="q3" value="b" id="b" />
+                          <label style="padding: 3px" for="b">b. Api</label>
+                          <br />
+                          <input class="td-" type="radio" name="q3" value="c" id="c" />
+                          <label style="padding: 3px" for="c">c. Air</label>
+                          <br />
+
+                          <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                            Semua benda yang dapat menghasilkan energi panas disebut
+                            <span id="ket-no3"></span>
+                            <br />
+                          </li>
+                          <input class="td-" type="radio" name="q4" value="a" id="a" />
+                          <label style="padding: 3px" for="a">a. Sumber energi </label>
+                          <br />
+                          <input class="td-" type="radio" name="q4" value="b" id="b" />
+                          <label style="padding: 3px" for="b">b. Sumber energi panas</label>
+                          <br />
+                          <input class="td-" type="radio" name="q4" value="c" id="c" />
+                          <label style="padding: 3px" for="c">c. Suhu</label>
+                          <br />
+
+                          <li style="margin-left: -5px; font-size: 1em; letter-spacing: 0.5px">
+                            Suatu energi yang dapat diterima dan dilepaskan suatu benda disebut..
+                            <span id="ket-no4"></span>
+                            <br />
+                          </li>
+                          <input class="td-" type="radio" name="q5" value="a" id="a" />
+                          <label style="padding: 3px" for="a">a. Energi Buatan</label>
+                          <br />
+                          <input class="td-" type="radio" name="q5" value="b" id="b" />
+                          <label style="padding: 3px" for="b">b. Energi Cahaya</label>
+                          <br />
+                          <input class="td-" type="radio" name="q5" value="c" id="c" />
+                          <label style="padding: 3px" for="c">c. Energi Panas </label>
+                          <br />
+                        </ol>
+                        <center>
+                          <p id="ket" class="center ket-jwbn"></p>
+                          <div class="left ket2" id="ket2"></div>
+
+                          <div class="center">
+                            <input type="button" class="button-utama" value="Cek Jawaban " onclick="getScore(this.form);" />
+                            <input id="reset" type="reset" class="button-utama" value="Coba Lagi" />
+                          </div>
+                        </center>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Akhir Accordion -->
+
+            <!-- Accordion 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="font-weight: bold">
+                  <img src="/img/openbook.png" width="40px" /> Ayo Menanya
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <div class="Kotak">
+                    <div class="card-body text-Center">
+                      <h6 class="text-Center text-succes">Perhatikan Gambar dibawah ini</h6>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <div class="col">
+                        <div class="card">
+                          <img src="/img/plta.png" class="card-img-top" alt="magnet" width="300px" />
+                          <div class="card-body">
+                            <h5 class="card-title">PLTA (Pembangkit Listrik Tenaga Air)</h5>
+                            <p class="card-text">
+                              Pembangkit Listrik Tenaga Air (PLTA) adalah pembangkit listrik yang mengandalkan energi potensial dan kinetik dari air untuk menghasilkan energi listrik. Hidroelektrik adalah energi listrik yang dibangkitkan
+                              dari pembangkit ini. PLTA mempunyai empat komponen utama yaitu waduk atau bendungan, saluran pelimpah (pembawa air), gedung sentral (powerhouse), dan serandang hubung (switchyard) atau unit transmisi yang
+                              mengalirkan produksi listrik ke konsumen.Contoh PLTA di Indonesia adalah PLTA Jatiluhur, PLTA Gajah Mungkur, PLTA Asahan.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="/img/pltu.png" class="card-img-top" alt="magnet1" width="300px" />
+                          <div class="card-body">
+                            <h5 class="card-title">PLTU (Pembangkit Listrik Tenaga Uap)</h5>
+                            <p class="card-text">
+                              Pembangkit Listrik Tenaga Uap (PLTU) adalah pembangkit yang mengandalkan energi kinetik dari uap untuk menghasilkan energi listrik. Bentuk utama dari pembangkit listrik jenis ini adalah Generator yang seporos
+                              dengan turbin yang digerakkan oleh tenaga kinetik dari uap panas/kering. contohnya adalah PLTU Cilacap, PLTU Priok, PLTU Paiton, PLTU Surabaya.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="/img/pltg.png" class="card-img-top" alt="magnet2" width="300px" />
+                          <div class="card-body">
+                            <h5 class="card-title">PLTG (Pembangkit Listrik Tenaga Gas)</h5>
+                            <p class="card-text">
+                              Pembangkit Listrik Tenaga GAS (PLTG) atau biasa disebut juga Pusat Listrik Tenaga Gas adalah salah satu mesin pengubah energi. Seperti halnya turbin air yang mengubah tenaga potensial air karena perbedaan
+                              ketinggian, turbin uap yang mengubah tenaga uap dengan menurunkan entalpy yang dikandungnya. Contoh PLTG yang sudah ada di Indonesia antara lain PLTG Cikarang, PLTG Sunyaragi, PLTG Batanghari, dan lain-lain.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="/img/pltd.png" class="card-img-top" alt="magnet3" width="300px" />
+                          <div class="card-body">
+                            <h5 class="card-title">PLTD (Pembangkit Listrik Tenaga Disel)</h5>
+                            <p class="card-text">
+                              Pembangkit Listrik Tenaga Diesel (PLTD) ialah Pembangkit listrik yang menggunakan mesin diesel sebagai penggerak mula (prime mover). Prime mover merupakan peralatan yang mempunyai fungsi menghasilkan energi
+                              mekanis yang diperlukan untuk memutar rotor generator. Contohnya adalah PLTD Karimunjawa, atau PLTD Banua Lima di Kalimantan Selatan.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Latihan Menanya -->
+                    <div class="mb-3">
+                      <h5 class="text-succes"></h5>
+                      <br />
+                      <div class="petunjuk">Buatlah pertanyaan dan jawaban berdasarkan proses membuat magnet sendiri pada kotak jawaban yang sudah disediakan! Lihat pada contoh soal nomor 1</div>
+                      <div class="row">
+                        <div class="col-1 text-end pe-0 me-0"><p>1.</p></div>
+                        <div class="col-11 ps-0 ms-0">
+                          <p>
+                            Apa yang dimaksud dengan Pembengkit Listrik Tenaga Air<br />Jawab:<br />Pembangkit listrik yang mengandalkan energi potensial dan kinetik dari air untuk menghasilkan energi listrik. Hidroelektrik adalah energi
+                            listrik yang dibangkitkan dari pembangkit.
+                          </p>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="row">
+                        <div class="col-1 text-end pe-0 me-0"><p>2.</p></div>
+                        <div class="col-11 ps-0 ms-0">
+                          <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p2" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j2" /></p>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="row">
+                        <div class="col-1 text-end pe-0 me-0"><p>3.</p></div>
+                        <div class="col-11 ps-0 ms-0">
+                          <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p3" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j3" /></p>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="row">
+                        <div class="col-1 text-end pe-0 me-0"><p>4.</p></div>
+                        <div class="col-11 ps-0 ms-0">
+                          <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p4" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j4" /></p>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="row">
+                        <div class="col-1 text-end pe-0 me-0"><p>5.</p></div>
+                        <div class="col-11 ps-0 ms-0">
+                          <p><input type="text" class="w-100" placeholder="Isi dengan pertanyaan" id="p5" /><br />Jawab:<br /><input type="text" class="w-100" placeholder="Isi dengan jawaban" id="j5" /></p>
+                        </div>
+                      </div>
+                      <p class="text-end"><button class="btn btn-primary btn-md" type="submit" id="selesai">Selesai</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Ayo Mencoba  -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree"
+                    style="font-weight: bold"
+                  >
+                    <img src="/img/openbook2.png" width="40px" />Ayo Mencoba
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    <div class="Kotak">
+                      <div class="col">
+                        <h4 class="text-Center" style="text-align: center">Membuat Kincir Angin</h4>
+                        <p class="fw-bold">Alat dan Bahan</p>
+                        <ol type="1">
+                          <li>Lam Tembak</li>
+                          <li>2 buah Kabel</li>
+                          <li>Dinamo Kecil</li>
+                          <li>Stik Es Krim</li>
+                          <li>2 Buah Batrai</li>
+                          <li>Saklar</li>
+                          <li>Timah</li>
+                          <li>Lem Korea</li>
+                          <li>Kawat</li>
+                          <li>Tang</li>
+                          <li>Gunting</li>
+                          <li>Solder</li>
+                        </ol>
+                      </div>
+                      <div class="col">
+                        <p class="fw-bold">Langkah Percobaan</p>
+                        <ol>
+                          <li>Ke2 kabel dipanaskan ujungnya dengan menggunakan solder kemudian dihubungkan ke dinamo.</li>
+                          <li>letakkan dibatrai yang sudah kita lem, kemudian kabel dinamo yang keluar dihubungkan ke batrai</li>
+                          <li>Batrai yang sudah dihubungkan ke dinamo.</li>
+                          <li>Kabel pada saklar dihubungkan ke batrai</li>
+                          <li>Saklar dihubungkan dulu dengan kabel batrai dan kabel dinamo</li>
+                          <li>kabel dihubungkan ke saklar dengan dua kutub.</li>
+                        </ol>
+                      </div>
+
+                      <div class="text-center">
+                        <video controls id="video2_2" class="video">
+                          <source src="/Video/Membuat Kincir Angin.mp4" type="video/webm" />
+                        </video>
+                        <center>
+                          <div class="card video">
+                            <div class="card-body-12 pb-2 pt-2">
+                              <a href="#" onclick="setCurTime1_1(1)" class="badge badge-primary btnvideo ml-2 mr-2">Alat dan Bahan</a>
+                              <a href="#" onclick="setCurTime1_1(2)" class="badge badge-primary btnvideo ml-2 mr-2">Cara Kerja</a>
+                            </div>
+                          </div>
+                        </center>
+                      </div>
+
+                      <div class="petunjuk">
+                        Setelah menyimak dan memperhatikan video di atas, silahkan buat video uji coba mandiri. video uji coba di upload ke youtube dan link nya silahkan submit pada form berikut.
+                        <input type="file" id="UnggahFile" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Akhir Accordion -->
+
+                <div class="accordion4">
+                  <h2 class="accordion-header" id="panelsStayOpen-heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="true" aria-controls="panelsStayOpen-collapse4" style="font-weight: bold">
+                      <img src="/img/kids.png" width="40px" />Ayo menalar
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
+                    <div class="Kotak">
+                      Jawablah pertanyaan dibawah ini dengan cara klik kotak jawaban yang ada di kolom Pendapatku! Lalu klik tombol Cek Jawaban Jika jawabanmu benar maka akan ditampilkan teks Jawaban Kamu benar! beserta dengan
+                      penjelasannya. Sedangkan jika jawabanmu salah maka akan ditampilkan teks Jawaban Kamu salah! beserta dengan penjelasannya.
+
+                      <div class="bord">
+                        <table class="table tablecek table-bordered container text-center" style="border: 1px solid">
+                          <thead style="background-color: #ff3232">
+                            <tr>
+                              <th scope="col" class="col-sm-1">No</th>
+                              <th scope="col" class="col-sm-5">Pertanyaan</th>
+                              <th scope="col" class="col-sm-1">Benar</th>
+                              <th scope="col" class="col-sm-1">Salah</th>
+                              <th scope="col" class="col-sm-1">Keterangan</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Pembangkit lListrik Tenaga Uap merupakan pembangkit tenaga listrik yang memanfaatkan tenaga uap untuk menghasilkan energi listrik.</td>
+                              <td class="text-center"><input type="checkbox" onclick="cekBUap();" style="width: 20px; height: 20px" name="uap" id="buap" /></td>
+                              <td class="text-center"><input type="checkbox" onclick="cekSUap();" style="width: 20px; height: 20px" name="uap" id="suap" /></td>
+                              <td><span class="cekUap" style="font-weight: bold"></span></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>PLTP yaitu memanfaatkan panel surya untuk menyimpan energi panas dari matahari ke dalam baterai atau aki untuk</td>
+                              <td class="text-center"><input type="checkbox" onclick="cekSSurya();" style="width: 20px; height: 20px" name="surya" id="ssurya" /></td>
+                              <td class="text-center"><input type="checkbox" onclick="cekBSurya();" style="width: 20px; height: 20px" name="surya" id="bsurya" /></td>
+                              <td><span class="cekSurya mr-2" style="font-weight: bold"></span></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Air merupakan sumber daya alam yang paling banyak ditemukan, dan menjadi sumber energi yang paling berpotensi untuk menghasilkan listrik.</td>
+                              <td class="text-center"><input type="checkbox" onclick="cekBAir();" style="width: 20px; height: 20px" name="air" id="bair" /></td>
+                              <td class="text-center"><input type="checkbox" onclick="cekSAir();" style="width: 20px; height: 20px" name="air" id="sair" /></td>
+                              <td><span class="cekAir mr-2" style="font-weight: bold"></span></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Energi listrik dapat digunakan untuk membuat berbagai peralatan elektronik berfungsi</td>
+                              <td class="text-center"><input type="checkbox" onclick="cekBListrik();" style="width: 20px; height: 20px" name="listrik" id="blistrik" /></td>
+                              <td class="text-center"><input type="checkbox" onclick="cekSListrik();" style="width: 20px; height: 20px" name="listrik" id="slistrik" /></td>
+                              <td><span class="cekListrik mr-2" style="font-weight: bold"></span></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">5</th>
+                              <td>Berikut ini pembangkit listrik yang menggunakan sumber energi yang tidak berasal dari bumi adalah PLTU</td>
+                              <td class="text-center"><input type="checkbox" onclick="cekSEnergi();" style="width: 20px; height: 20px" name="energi" id="senergi" /></td>
+                              <td class="text-center"><input type="checkbox" onclick="cekBEnergi();" style="width: 20px; height: 20px" name="energi" id="benergi" /></td>
+                              <td><span class="cekEnergi mr-2" style="font-weight: bold"></span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
+                    <div class="accordion-body">
+                      <p class="text-black mt-5 ms-2 p-2 bg-light border-primary border rounded">
+                        Jawablah pertanyaan dibawah ini dengan cara klik kotak jawaban yang ada di kolom Pendapatku! Lalu klik tombol Cek Jawaban Jika jawabanmu benar maka akan ditampilkan teks Jawaban Kamu benar! beserta dengan
+                        penjelasannya. Sedangkan jika jawabanmu salah maka akan ditampilkan teks Jawaban Kamu salah! beserta dengan penjelasannya
+                      </p>
+                      <div class="row">
+                        <div class="table-responsive-sm">
+                          <table class="col-10 table table-bordered container text-center" style="border: 1px solid">
+                            <thead style="background-color: #34a3fe">
+                              <tr>
+                                <th scope="col1" class="col-sm-1">No</th>
+                                <th scope="col1" class="col-sm-2">Pertanyaan</th>
+                                <th scope="col2" class="col-sm-2">Jawaban</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th class="col-sm-1">1.</th>
+                                <td class="col-sm-5">Apa yang terjadi jika saklar dimatikan?</td>
+                                <td class="col-sm-2">
+                                  <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Pilihan Jawaban</option>
+                                    <option value="1">Jika</option>
+                                    <option value="2">Jika sakelar dimatikan maka lampu tidak akan menyala.</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th class="col-sm-1">2.</th>
+                                <td class="col-sm-5">Apa yang terjadi jika sumber energi listrik pada alat itu dicabut?</td>
+                                <td class="col-sm-2">
+                                  <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Pilihan Jawaban</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th class="col-sm-1">3.</th>
+                                <td class="col-sm-5">Apakah sumber energi listrik yang ada pada alat itu tidak akan pernah habis? Apa buktinya?</td>
+                                <td class="col-sm-2">
+                                  <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Pilihan Jawaban</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <button class="btn btn-primary float-end" onclick="cekJawaban()">Cek Jawaban</button>
+                        </div>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div> -->
+                  <div class="accordion5">
+                    <h2 class="accordion-header" id="panelsStayOpen-heading5">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5" style="font-weight: bold">
+                        <img src="/img/speaking.png" width="40px" />Ayo Mengkomunikasikan
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
+                      <div class="accordion-body">
+                        <div class="Kotak">
+                          Pada akhir materi ini, siswa diminta menuliskan kesimpulan terkait materi yang sudah dipelajari.
+                          <br />
+                          <center>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Pengumpulan Kesimpulan</button>
+                          </center>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Lembar Kerja</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="tujuan" id="tujuan">
+                                Petunjuk Pengerjaan
+                                <li>Perhatikan dan ikuti petunjuk pengisian Lembar Kerja yang sudah disediakan</li>
+                                <li>Periksa dan bacalah soal-soal sebelum anda menjawab</li>
+                                <li>Dahulukan mengerjakan soal-soal yang anda anggap mudah</li>
+                              </div>
+                              <div class="modal-body">
+                                <div class="mb-3">
+                                  <label for="exampleFormControlnama1" class="form-label">Nama:</label>
+                                  <input type="Nama" class="form-nama1" id="exampleFormControlnama1" placeholder="Nama" />
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleFormControlnisn" class="form-label">NISN : </label>
+                                  <input type="NISN" class="form-nisn1" id="exampleFormControlnisn1" placeholder="NISN" />
+                                </div>
+                                <hr />
+                                <div class="mb-3">
+                                  <p>Jawablah pertanyaan berikut berdasarkan hasil pengamatan materi diatas.</p>
+                                  <label for="exampleFormControlkesimpulan" class="form-label">Apa kepanjangan dari PLTU</label>
+                                  <textarea class="form-control" id="exampleFormControlkkesimpulan" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleFormControlkesimpulan" class="form-label">Sebutkan contoh perubahan energi listrik menjadi gerak!</label>
+                                  <textarea class="form-control" id="exampleFormControlkkesimpulan" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleFormControlkesimpulan" class="form-label">Kesimpulan</label>
+                                  <textarea class="form-control" id="exampleFormControlkkesimpulan" rows="3"></textarea>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" href="#">Kirim</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mt-2">
+          <li class="page-item"><a class="page-link" href="materi_b.html">Sebelumnya</a></li>
+          <li class="page-item"><a class="page-link" href="kuis2.html">Selanjutnya</a></li>
+        </ul>
+      </nav>
+    </section>
+    <script>
+      let arrow = document.querySelectorAll(".arrow");
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+          arrowParent.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+    </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+      // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCplY14r_usHBnV0q4fN9yLFB17F0rFcY4",
+        authDomain: "skripsi-1ebb7.firebaseapp.com",
+        databaseURL: "https://skripsi-1ebb7-default-rtdb.firebaseio.com",
+        projectId: "skripsi-1ebb7",
+        storageBucket: "skripsi-1ebb7.appspot.com",
+        messagingSenderId: "95532009828",
+        appId: "1:95532009828:web:692b1f60263f77340ad271",
+        measurementId: "G-2X999JFXEX",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      import { getDatabase, ref, set, child, get, onValue, onChildAdded } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+      const db = getDatabase();
+
+      //referensi//
+      let namalink = document.getElementById("userlink");
+      let nama = sessionStorage.getItem("nama");
+      namalink.innerText = nama;
+      let nisnlink = document.getElementById("nisnlink");
+
+      let nisn = sessionStorage.getItem("nisn");
+      nisnlink.innerText = nisn;
+      var currentUser = null;
+
+      // Function;
+      function getNama() {
+        if (nama == null) {
+          window.location = "index.html";
+        } else {
+          userlink.innerText = nama;
+        }
+      }
+
+      function getNisn() {
+        if (nisn == null) {
+          window.location = "index.html";
+        } else {
+          nisnlink.innerText = nisn;
+        }
+      }
+
+      getNama();
+      getNisn();
+
+      function LogOut() {
+        sessionStorage.removeItem("nama");
+
+        window.location = "index.html";
+      }
+
+      $("#selesai").on("click", function (event) {
+        event.preventDefault();
+
+        let userlink = sessionStorage.getItem("nama");
+
+        set(ref(db, "esaiA/" + userlink), {
+          nama: userlink,
+          p2: document.getElementById("p2").value,
+          j2: document.getElementById("j2").value,
+          p3: document.getElementById("p3").value,
+          j3: document.getElementById("j3").value,
+          p4: document.getElementById("p4").value,
+          j4: document.getElementById("j4").value,
+          p5: document.getElementById("p5").value,
+          j5: document.getElementById("j5").value,
+        });
+
+        if (confirm("Jawabanmu Sudah Tersimpan")) {
+          document.getElementById("p2").value = "";
+          document.getElementById("j2").value = "";
+          document.getElementById("p3").value = "";
+          document.getElementById("j3").value = "";
+          document.getElementById("p4").value = "";
+          document.getElementById("j4").value = "";
+          document.getElementById("p5").value = "";
+          document.getElementById("j5").value = "";
+        }
+      });
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/js/materi_b.js"></script>
+    <script src="/js/navigasi.js"></script>
+    <script src="/json/kuis2.json"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+  </body>
+</html>

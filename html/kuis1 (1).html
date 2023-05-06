@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/kuis.css" />
+    <link rel="stylesheet" href="/css/kuisdata.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,700&family=Prosto+One&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Poppins:wght@600&display=swap" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KUIS 1</title>
+    <body style="background-color: #549bd2">
+      <body onload="readlah()">
+        <div class="header">
+          <div id="header kanan" style="width: 100%">
+            <h1 style="margin-left: 1px; margin-top: -9px; font-family: 'Poppins', sans-serif; padding-top: 3px; background-color: #c3e5f2; text-align: center">KUIS 1</h1>
+            <br />
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="isi" id="data">
+            <br />
+
+            <div class="petunjuk">
+              <div class="text-center">
+                <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 10px; text-align: center">Petunjuk Pengerjaan</h2>
+              </div>
+              <hr />
+
+              <div class="petunjuk1" id="petunjuk1">
+                <ol>
+                  <li>Kuis ini terdiri dari 10 soal berupa pilihan ganda.</li>
+                  <li>Setiap soal memiliki bobot poin sebanyak 10 poin.</li>
+                  <li>Waktu pengerjaan 30 menit.</li>
+                  <li>Tekan "Mulai" untuk menjawab kuis.</li>
+                  <li>Tekan salah satu pilihan jawaban yang dianggap benar.</li>
+                  <li>Setelah semua pertanyaan selesai dijawab, tekan tombol "Selesai" untuk mengirim jawaban kuis.</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="kotakgaris">
+              <center>
+                <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: -7px">Data Siswa</h2>
+                <hr />
+                <div class="data_diri" style="text-align: center; background-color: #f6e6ce; border-radius: 10px">
+                  <label style="height: 80ox; font-size: 16px">
+                    Nama &ensp;&ensp;&ensp;
+                    <td>:</td>
+                    <td><span id="namaInp"></span></td>
+                  </label>
+                  <label style="height: 80ox; font-size: 16px">
+                    NISN &ensp;&ensp;&ensp;&ensp;
+                    <td>:</td>
+                    <td><span id="nisnInp"></span></td>
+                  </label>
+                  <!-- <label style="height: 80ox; font-size: 16px">
+                  Kelas &ensp;&ensp;&ensp;&ensp;
+                  <td>:</td>
+                  <td><span id="kelaslink"></span></td>
+                </label>
+                <br /> -->
+                  <br />
+                  <a href="materi_a.html" class="kembalikemateri"> Kembali ke materi </a>
+                  <div class="buttonmulai">Mulai</div>
+                </div>
+              </center>
+            </div>
+          </div>
+
+          <!--KIRI kotak nomor soal-->
+          <div class="kiri" id="kiri">
+            <div class="bg_nav">
+              <div class="bg_full">
+                <p class="text" style="color: black; font-weight: bold; font-size: 14pt; text-align: center">Nomor Soal</p>
+                <br />
+              </div>
+
+              <div class="bg_soal">
+                <div class="soal_nav text-center belum">
+                  <p class="text fontsedang">1</p>
+                </div>
+                <div class="soal_nav belum">
+                  <p class="text fontsedang">2</p>
+                </div>
+                <div class="soal_nav belum">
+                  <p class="text fontsedang">3</p>
+                </div>
+                <div class="soal_nav belum">
+                  <p class="text fontsedang">4</p>
+                </div>
+                <div class="soal_nav belum">
+                  <p class="text fontsedang">5</p>
+                </div>
+                <div class="soal_nav belum">
+                  <p class="text fontsedang">6</p>
+                </div>
+                <div class="soal_nav belum">
+                  <p class="text fontsedang">7</p>
+                </div>
+                <div class="soal_nav belum">
+                  <p class="text fontsedang">8</p>
+                </div>
+                <div class="soal_nav belum">
+                  <p class="text fontsedang">9</p>
+                </div>
+                <div class="soal_nav belum">
+                  <p class="text fontsedang">10</p>
+                </div>
+                <div class="clear"></div>
+                <div class="ket fontsedang">
+                  Keterangan :<br />
+                  <span class="belum" style="width: 25%; border: 1px solid black">Putih</span> = Belum dijawab<br />
+                  <span class="sudah" style="width: 25%; border: 1px solid black">Hijau</span> = Sudah dijawab
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--AKHIR KIRI-->
+
+          <!--KANAN-->
+          <div class="kanan" id="kanan">
+            <h3><b>Kuis 1 : Apa dan Untuk Apa Magnet Diciptakan?</b></h3>
+            <center>
+              <div class="time" id="time">30 : 00</div>
+            </center>
+
+            <!--NOMOR 1-->
+            <div class="bg_pertanyaan" id="bg_pertanyaan">
+              <div class="no">
+                <div class="soal">
+                  <div class="nomor">
+                    <b>Nomor <span id="nomornya"></span></b>
+                  </div>
+                </div>
+              </div>
+              <div class="inti_pertanyaan">
+                <div class="pertanyaannya">
+                  <p id="soalnya"></p>
+                </div>
+                <div class="batas"></div>
+
+                <div class="soall">
+                  <label class="bg_pilihan">
+                    <input id="radio1" type="radio" name="radio1" value="a" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya0"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio1" type="radio" name="radio1" value="b" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya1"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio1" type="radio" name="radio1" value="c" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya2"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio1" type="radio" name="radio1" value="d" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya3"></p>
+                    </span>
+                  </label>
+                </div>
+                <div class="nav_sebelum" id="nav_sebelum">
+                  <p>&laquo; Sebelumnya</p>
+                </div>
+                <div class="nav_selanjut" id="nav_selanjut">
+                  <p>Selanjutnya &raquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!--NOMOR 2-->
+            <div class="bg_pertanyaan" id="bg_pertanyaan">
+              <div class="no">
+                <div class="soal">
+                  <div class="nomor">
+                    <b>Nomor <span id="nomornya"></span></b>
+                  </div>
+                </div>
+              </div>
+              <div class="inti_pertanyaan">
+                <div class="pertanyaannya">
+                  <p id="soalnya"></p>
+                </div>
+                <div class="batas"></div>
+
+                <div class="soall">
+                  <label class="bg_pilihan">
+                    <input id="radio2" type="radio" name="radio2" value="a" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya0"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio2" type="radio" name="radio2" value="b" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya1"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio2" type="radio" name="radio2" value="c" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya2"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio2" type="radio" name="radio2" value="d" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya3"></p>
+                    </span>
+                  </label>
+                </div>
+                <div class="nav_sebelum" id="nav_sebelum">
+                  <p>&laquo; Sebelumnya</p>
+                </div>
+                <div class="nav_selanjut" id="nav_selanjut">
+                  <p>Selanjutnya &raquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!--NOMOR 3-->
+            <div class="bg_pertanyaan" id="bg_pertanyaan">
+              <div class="no">
+                <div class="soal">
+                  <div class="nomor">
+                    <b>Nomor <span id="nomornya"></span></b>
+                  </div>
+                </div>
+              </div>
+              <div class="inti_pertanyaan">
+                <div class="pertanyaannya">
+                  <p id="soalnya"></p>
+                </div>
+                <div class="batas"></div>
+
+                <div class="soall">
+                  <label class="bg_pilihan">
+                    <input id="radio3" type="radio" name="radio3" value="a" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya0"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio3" type="radio" name="radio3" value="b" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya1"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio3" type="radio" name="radio3" value="c" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya2"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio3" type="radio" name="radio3" value="d" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya3"></p>
+                    </span>
+                  </label>
+                </div>
+
+                <div class="nav_sebelum" id="nav_sebelum">
+                  <p>&laquo; Sebelumnya</p>
+                </div>
+                <div class="nav_selanjut" id="nav_selanjut">
+                  <p>Selanjutnya &raquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!--NOMOR 4-->
+            <div class="bg_pertanyaan" id="bg_pertanyaan">
+              <div class="no">
+                <div class="soal">
+                  <div class="nomor">
+                    <b>Nomor <span id="nomornya"></span></b>
+                  </div>
+                </div>
+              </div>
+              <div class="inti_pertanyaan">
+                <div class="pertanyaannya">
+                  <p id="soalnya"></p>
+                </div>
+                <div class="batas"></div>
+
+                <div class="soall">
+                  <label class="bg_pilihan">
+                    <input id="radio4" type="radio" name="radio4" value="a" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya0"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio4" type="radio" name="radio4" value="b" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya1"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio4" type="radio" name="radio4" value="c" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya2"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio4" type="radio" name="radio4" value="d" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya3"></p>
+                    </span>
+                  </label>
+                </div>
+                <div class="nav_sebelum" id="nav_sebelum">
+                  <p>&laquo; Sebelumnya</p>
+                </div>
+                <div class="nav_selanjut" id="nav_selanjut">
+                  <p>Selanjutnya &raquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!--NOMOR 5-->
+            <div class="bg_pertanyaan" id="bg_pertanyaan">
+              <div class="no">
+                <div class="soal">
+                  <div class="nomor">
+                    <b>Nomor <span id="nomornya"></span></b>
+                  </div>
+                </div>
+              </div>
+              <div class="inti_pertanyaan">
+                <div class="pertanyaannya">
+                  <p id="soalnya"></p>
+                </div>
+                <div class="batas"></div>
+
+                <div class="soall">
+                  <label class="bg_pilihan">
+                    <input id="radio5" type="radio" name="radio5" value="a" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya0"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio5" type="radio" name="radio5" value="b" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya1"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio5" type="radio" name="radio5" value="c" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya2"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio5" type="radio" name="radio5" value="d" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya3"></p>
+                    </span>
+                  </label>
+                </div>
+                <div class="nav_sebelum" id="nav_sebelum">
+                  <p>&laquo; Sebelumnya</p>
+                </div>
+                <div class="nav_selanjut" id="nav_selanjut">
+                  <p>Selanjutnya &raquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!--NOMOR 6-->
+            <div class="bg_pertanyaan" id="bg_pertanyaan">
+              <div class="no">
+                <div class="soal">
+                  <div class="nomor">
+                    <b>Nomor <span id="nomornya"></span></b>
+                  </div>
+                </div>
+              </div>
+              <div class="inti_pertanyaan">
+                <div class="pertanyaannya">
+                  <p id="soalnya"></p>
+                </div>
+                <div class="batas"></div>
+
+                <div class="soall">
+                  <label class="bg_pilihan">
+                    <input id="radio6" type="radio" name="radio6" value="a" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya0"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio6" type="radio" name="radio6" value="b" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya1"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio6" type="radio" name="radio6" value="c" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya2"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio6" type="radio" name="radio6" value="d" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya3"></p>
+                    </span>
+                  </label>
+                </div>
+                <div class="nav_sebelum" id="nav_sebelum">
+                  <p>&laquo; Sebelumnya</p>
+                </div>
+                <div class="nav_selanjut" id="nav_selanjut">
+                  <p>Selanjutnya &raquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!--NOMOR 7-->
+            <div class="bg_pertanyaan" id="bg_pertanyaan">
+              <div class="no">
+                <div class="soal">
+                  <div class="nomor">
+                    <b>Nomor <span id="nomornya"></span></b>
+                  </div>
+                </div>
+              </div>
+              <div class="inti_pertanyaan">
+                <div class="pertanyaannya">
+                  <p id="soalnya"></p>
+                </div>
+                <div class="batas"></div>
+
+                <div class="soall">
+                  <label class="bg_pilihan">
+                    <input id="radio7" type="radio" name="radio7" value="a" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya0"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio7" type="radio" name="radio7" value="b" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya1"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio7" type="radio" name="radio7" value="c" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya2"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio7" type="radio" name="radio7" value="d" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya3"></p>
+                    </span>
+                  </label>
+                </div>
+                <div class="nav_sebelum" id="nav_sebelum">
+                  <p>&laquo; Sebelumnya</p>
+                </div>
+                <div class="nav_selanjut" id="nav_selanjut">
+                  <p>Selanjutnya &raquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!--NOMOR 8-->
+            <div class="bg_pertanyaan" id="bg_pertanyaan">
+              <div class="no">
+                <div class="soal">
+                  <div class="nomor">
+                    <b>Nomor <span id="nomornya"></span></b>
+                  </div>
+                </div>
+              </div>
+              <div class="inti_pertanyaan">
+                <div class="pertanyaannya">
+                  <p id="soalnya"></p>
+                </div>
+                <div class="batas"></div>
+
+                <div class="soall">
+                  <label class="bg_pilihan">
+                    <input id="radio8" type="radio" name="radio8" value="a" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya0"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio8" type="radio" name="radio8" value="b" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya1"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio8" type="radio" name="radio8" value="c" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya2"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio8" type="radio" name="radio8" value="d" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya3"></p>
+                    </span>
+                  </label>
+                </div>
+                <div class="nav_sebelum" id="nav_sebelum">
+                  <p>&laquo; Sebelumnya</p>
+                </div>
+                <div class="nav_selanjut" id="nav_selanjut">
+                  <p>Selanjutnya &raquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!--NOMOR 9-->
+            <div class="bg_pertanyaan" id="bg_pertanyaan">
+              <div class="no">
+                <div class="soal">
+                  <div class="nomor">
+                    <b>Nomor <span id="nomornya"></span></b>
+                  </div>
+                </div>
+              </div>
+              <div class="inti_pertanyaan">
+                <div class="pertanyaannya">
+                  <p id="soalnya"></p>
+                </div>
+                <div class="batas"></div>
+
+                <div class="soall">
+                  <label class="bg_pilihan">
+                    <input id="radio9" type="radio" name="radio9" value="a" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya0"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio9" type="radio" name="radio9" value="b" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya1"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio9" type="radio" name="radio9" value="c" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya2"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio9" type="radio" name="radio9" value="d" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya3"></p>
+                    </span>
+                  </label>
+                </div>
+                <div class="nav_sebelum" id="nav_sebelum">
+                  <p>&laquo; Sebelumnya</p>
+                </div>
+                <div class="nav_selanjut" id="nav_selanjut">
+                  <p>Selanjutnya &raquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!--NOMOR 10-->
+            <div class="bg_pertanyaan" id="bg_pertanyaan">
+              <div class="no">
+                <div class="soal">
+                  <div class="nomor">
+                    <b>Nomor <span id="nomornya"></span></b>
+                  </div>
+                </div>
+              </div>
+              <div class="inti_pertanyaan">
+                <div class="pertanyaannya">
+                  <p id="soalnya"></p>
+                </div>
+                <div class="batas"></div>
+
+                <div class="soall">
+                  <label class="bg_pilihan">
+                    <input id="radio10" type="radio" name="radio10" value="a" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya0"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio10" type="radio" name="radio10" value="b" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya1"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio10" type="radio" name="radio10" value="c" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya2"></p>
+                    </span>
+                  </label>
+
+                  <label class="bg_pilihan">
+                    <input id="radio10" type="radio" name="radio10" value="d" />
+                    <span class="textnya">
+                      <span class="nav_pilihan"></span>
+                      <p class="p" id="pilihannya3"></p>
+                    </span>
+                  </label>
+                </div>
+                <div class="nav_sebelum" id="nav_sebelum">
+                  <p>&laquo; Sebelumnya</p>
+                </div>
+                <div class="selesai">Selesai</div>
+                <!-- <div class="nav_selanjut" id="nav_selanjut"></div> -->
+              </div>
+            </div>
+          </div>
+          <!--AKHIR KANAN-->
+
+          <!--SKOR-->
+          <div class="dataaa hilang" id="halskor">
+            <div class="skornya">
+              <center>
+                <br /><br />
+                <p class="judul">HASIL KUIS 1 <br /></p>
+                <br />
+
+                <center>
+                  <table class="t_hasil">
+                    <center>
+                      <tr>
+                        <td class="ket_hasil">
+                          <p>Nama Lengkap</p>
+                        </td>
+                        <td>
+                          <p>:</p>
+                        </td>
+                        <td>
+                          <p class="nama">Trisena Wulandari</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ket_hasil">
+                          <p>NISN</p>
+                        </td>
+                        <td>
+                          <p>:</p>
+                        </td>
+                        <td>
+                          <p class="nisn">1910131320014</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ket_hasil">
+                          <p>Sekolah</p>
+                        </td>
+                        <td>
+                          <p>:</p>
+                        </td>
+                        <td>
+                          <p class="sekolah">SD</p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="ket_hasil">
+                          <p>Tanggal</p>
+                        </td>
+                        <td>
+                          <p>:</p>
+                        </td>
+                        <td>
+                          <p class="hari">Senin</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ket_hasil">
+                          <p>Waktu Selesai</p>
+                        </td>
+                        <td>
+                          <p>:</p>
+                        </td>
+                        <td>
+                          <p class="waktu">12:30</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ket_hasil">
+                          <p>Nilai</p>
+                        </td>
+                        <td>
+                          <p>:</p>
+                        </td>
+                        <td>
+                          <p class="hasill">50</p>
+                        </td>
+                      </tr>
+                    </center>
+                  </table>
+                </center>
+                <center>
+                  <div id="ulang" class="ket_ulang hilang">
+                    Mohon maaf nilai Anda masih belum memenuhi KKM (KKM = 75) <br />Yuk Ulangi Kuis!<br />
+                    <a href="Kuis1.html" class="buttonback">Ulang Kuis</a>
+                    <a class="buttonnext" href="materi_b.html">Materi selanjutnya</a>
+                  </div>
+                  <div id="materi" class="ket_ulang hilang">
+                    Selamat Anda berhasil! <br />
+                    Anda dapat melanjutkan ke materi selanjutnya <br />
+                    <a class="buttonLanjut" href="materi_b.html">Materi Selanjutnya</a>
+                  </div>
+                </center>
+              </center>
+            </div>
+          </div>
+          <!-- AKHIR SKOR-->
+        </div>
+        <!--AKHIR KNTEN-->
+
+        <script type="module">
+          //Firebase
+          // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+          import { getDatabase, ref, set, child, get } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
+
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+            apiKey: "AIzaSyAVVc23vDui33WSccLI5eeCUlT830ZlMW4",
+            authDomain: "kuis-a.firebaseapp.com",
+            databaseURL: "https://kuis-a-default-rtdb.firebaseio.com",
+            projectId: "kuis-a",
+            storageBucket: "kuis-a.appspot.com",
+            messagingSenderId: "487238106895",
+            appId: "1:487238106895:web:3cc7c6d6198669f214887a",
+            measurementId: "G-GKW8NJW5JV",
+          };
+
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          //   const analytics = getAnalytics(app);
+
+          // //referensi//
+          // let namaInp = document.getElementById("namaInp");
+          // let nisnInp = document.getElementById("nisnInp");
+          // // let kelaslink = document.getElementById("kelaslink");
+
+          // let fullname = sessionStorage.getItem("fullname");
+          // let nisn = sessionStorage.getItem("nisn");
+          // // let kelas = sessionStorage.getItem("kelas");
+          // namaInp.innerText = fullname;
+          // nisnInp.innerText = nisn;
+          // // kelaslink.innerText = kelas;
+
+          //------------ganti no soal -------------
+          let selanjutnya = document.querySelector(".buttonmulai");
+          let datadiri = document.querySelector(".data_diri");
+
+          selanjutnya.addEventListener("click", function () {
+            let nama = sessionStorage.getItem("nama");
+            let nisn = sessionStorage.getItem("nisn");
+            let kelas = sessionStorage.getItem("kelas");
+
+            if (nama == null) {
+              alert("silahkan login terlebih dahulu");
+              window.location = "login.html";
+            } else {
+              document.getElementById("data").className += " hilang";
+              datadiri.className += " hilang";
+              document.getElementById("kiri").className = document.getElementById("kiri").className.replace("hilang", "");
+              document.getElementById("kanan").className = document.getElementById("kanan").className.replace("hilang", "");
+            }
+          });
+
+          //menghilangkan kanan kiri awalan kuis
+          function readlah() {
+            const db = getDatabase();
+
+            var task = ref(db, "kontrolkuis1/");
+            let tmp = document.querySelector("body");
+            onChildAdded(task, (data) => {
+              var taskvalue = data.val();
+
+              if (taskvalue.id == "12093499" && taskvalue.nilai == 0) {
+                tmp.innerHTML += '<div class = "full" > <p>HALAMAN TIDAK DAPAT DIAKSES</p> </div>';
+                // console.log('0');
+              } else {
+                // console.log('1');
+              }
+            });
+          }
+
+          window.onload = () => {
+            document.getElementById("kiri").className += " hilang";
+            document.getElementById("kanan").className += " hilang";
+
+            readlah();
+          };
+
+          let wktu = document.querySelector("time");
+          let nilaiwktu = 0;
+          // countDown();
+
+          let countDownDate = new Date().getTime();
+          //waktu 30 menit
+          countDownDate += 1801000;
+          // //waktu 45 menit
+          // countDownDate += 2700000;
+          // countDownDate += 12000;
+          //15 detik
+          // countDownDate += 17000;
+          var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            // Perhitungan waktu untuk menit dan detik
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("time").innerHTML = minutes + ":" + seconds;
+
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("time").innerHTML = "Waktu Selesai";
+              nilaiwktu = 1;
+            }
+          }, 1000);
+
+          // -----------------------------------------------------------------------------------------
+          // mengambil data dan menampilkanya
+
+          let dat = new XMLHttpRequest();
+          dat.onreadystatechange = function () {
+            let cek = [];
+            let jwbs = [];
+            let hasilakhir = 0;
+            let benarr = 0;
+            let salahh = 0;
+
+            if (dat.readyState == 4 && dat.status == 200) {
+              // tankap apapun responsnya tangkap,lalu diubah ke objeck
+              let data = JSON.parse(this.responseText);
+              // melihat data
+              // console.log(data);
+
+              // ---------------------------------
+              // acak urutan soal
+              //RANDOM URUTAN SOAL
+              for (let x = 0; x < 100; x++) {
+                // acak angka dengan batas length.data dan minimum 0
+                let angka = Math.floor(Math.random() * data.length) + 0;
+                cek.push(angka);
+              }
+              // membuang angka yang sama
+              cek = Array.from(new Set(cek));
+              console.log(cek);
+              // ---------------------------------
+              // ambil data tertentu
+
+              for (let i = 0; i < cek.length; i++) {
+                let nilai = cek[i];
+
+                let soaldata = data[nilai]["soal" + nilai]["soal"];
+                let jwb0 = data[nilai]["soal" + nilai]["a"];
+                let jwb1 = data[nilai]["soal" + nilai]["b"];
+                let jwb2 = data[nilai]["soal" + nilai]["c"];
+                let jwb3 = data[nilai]["soal" + nilai]["d"];
+
+                let bnr = data[nilai]["soal" + nilai]["benar"];
+
+                let jwb = [jwb0, jwb1, jwb2, jwb3];
+
+                jwbs.push(bnr);
+
+                // ---------------------------------
+                // // rangkai konten soal;
+                // let bg_pertanyaan = document.getElementById('bg_pertanyaan');
+                // if (i != 0) {
+                //     bg_pertanyaan.className += " hilang";
+                // }
+
+                //nomor ke-
+                let nomor = document.querySelectorAll(".soal #nomornya");
+                nomor[i].innerHTML = i + 1;
+
+                //soal
+                let soal = document.querySelectorAll(".bg_pertanyaan #soalnya");
+                soal[i].innerHTML = soaldata;
+
+                //pilihan a
+                let piliha = document.querySelectorAll(".textnya #pilihannya0");
+                piliha[i].innerHTML = jwb0;
+
+                //pilihan b
+                let pilihb = document.querySelectorAll(".textnya #pilihannya1");
+                pilihb[i].innerHTML = jwb1;
+
+                //pilihan c
+                let pilihc = document.querySelectorAll(".textnya #pilihannya2");
+                pilihc[i].innerHTML = jwb2;
+
+                //pilihan d
+                let pilihd = document.querySelectorAll(".textnya #pilihannya3");
+                pilihd[i].innerHTML = jwb3;
+
+                let bg_pertanyaan = document.getElementsByClassName("bg_pertanyaan");
+
+                for (let u = 0; u < bg_pertanyaan.length; u++) {
+                  if (u != 0) {
+                    if (bg_pertanyaan[u].className.indexOf("hilang") == -1) {
+                      bg_pertanyaan[u].className += " hilang";
+                    }
+                  }
+                }
+              }
+
+              let bg_pertanyaan = document.getElementsByClassName("bg_pertanyaan");
+
+              //fungsi tombol lanjut
+              let lanjut = document.querySelectorAll(".nav_selanjut");
+              for (let y = 0; y < lanjut.length; y++) {
+                lanjut[y].addEventListener("click", function () {
+                  if (lanjut[y].className.indexOf("disable") == -1) {
+                    if (bg_pertanyaan[y].className.indexOf("hilang") == -1) {
+                      bg_pertanyaan[y + 1].className = bg_pertanyaan[y + 1].className.replace("hilang", "");
+                      bg_pertanyaan[y].className += " hilang";
+                    }
+                    // console.log(bg_pertanyaan[y+1]);
+                  }
+                });
+              }
+
+              //fungsi tombol sebelumnya
+              let sebelum = document.querySelectorAll(".nav_sebelum");
+              for (let y = 0; y < sebelum.length; y++) {
+                sebelum[y].addEventListener("click", function () {
+                  if (sebelum[y].className.indexOf("disable") == -1) {
+                    if (bg_pertanyaan[y].className.indexOf("hilang") == -1) {
+                      bg_pertanyaan[y - 1].className = bg_pertanyaan[y - 1].className.replace("hilang", "");
+                      bg_pertanyaan[y].className += " hilang";
+                    }
+                  }
+                });
+              }
+
+              //navigasi soal
+              let soal_nav = document.querySelectorAll(".soal_nav");
+              for (let y = 0; y < soal_nav.length; y++) {
+                soal_nav[y].addEventListener("click", function () {
+                  for (let u = 0; u < bg_pertanyaan.length; u++) {
+                    if (bg_pertanyaan[u].className.indexOf("hilang") == -1) {
+                      bg_pertanyaan[u].className += " hilang";
+                    }
+                  }
+                  bg_pertanyaan[y].className = bg_pertanyaan[y].className.replace("hilang", "");
+                });
+              }
+
+              //mewarnai soal yang sdh dijawab
+              let soall = document.querySelectorAll(".soall");
+              for (let y = 0; y < soall.length; y++) {
+                soall[y].addEventListener("click", function () {
+                  let pilih = document.querySelectorAll(".bg_pilihan input");
+                  for (let j = 0; j < pilih.length; j++) {
+                    pilih[j].addEventListener("click", function () {
+                      soal_nav[y].className = soal_nav[y].className.replace("belum", "sudah");
+                    });
+                  }
+                });
+              }
+
+              //cek jawaban
+              let selesai = document.querySelector(".selesai");
+              let pil_user = [];
+              let new_jwb_urut = [];
+              let new_jwb_urut_no = [];
+
+              selesai.addEventListener("click", function () {
+                let sarat = 0;
+
+                for (let t = 0; t < jwbs.length; t++) {
+                  if (soal_nav[t].className.indexOf("belum") == -1) {
+                    sarat = sarat + 1;
+                  }
+                }
+                // console.log(sarat);
+
+                if (sarat == jwbs.length) {
+                  // array kunci
+                  // console.log(jwbs);
+                  hasilakhir = 0;
+                  benarr = 0;
+                  salahh = jwbs.length;
+
+                  for (let i = 0; i < jwbs.length; i++) {
+                    let a = i + 1;
+                    let namaradio = document.getElementsByName("radio" + a);
+                    let checked = false;
+                    for (let j = 0; j < namaradio.length; j++) {
+                      if (namaradio[j].checked) {
+                        checked = true;
+                        pil_user.push(namaradio[j].value);
+                        if (namaradio[j].value == jwbs[i]) {
+                          hasilakhir = hasilakhir + 10;
+                          benarr = benarr + 1;
+                        } else {
+                          hasilakhir = hasilakhir;
+                        }
+                      }
+                    }
+                  }
+
+                  for (let i = 0; i < cek.length; i++) {
+                    for (let j = 0; j < cek.length; j++) {
+                      if (i == cek[j]) {
+                        new_jwb_urut.push(pil_user[j]);
+                        new_jwb_urut_no.push(cek[j]);
+                      }
+                    }
+                  }
+
+                  // simpan kedatabase----------
+                  console.log(nama);
+                  console.log(nisn);
+                  // console.log(kelas);
+                  console.log(hasilakhir);
+                  let waktunya = waktu();
+                  let harinya = hari();
+
+                  createTask(nama, nisn, hasilakhir, waktunya, harinya, new_jwb_urut);
+
+                  let namaget = document.querySelector(".nama");
+                  namaget.innerText = nama;
+
+                  let nisnget = document.querySelector(".nisn");
+                  nisnget.innerText = nisn;
+
+                  // let kelasget = document.querySelector(".kelas");
+                  // kelasget.innerText = kelas;
+
+                  let hariget = document.querySelector(".hari");
+                  hariget.innerText = harinya;
+
+                  let waktuget = document.querySelector(".waktu");
+                  waktuget.innerText = waktunya;
+
+                  let hasillget = document.querySelector(".hasill");
+                  hasillget.innerText = hasilakhir;
+
+                  let kirihilang = document.querySelector(".kiri");
+                  kirihilang.className += " hilang";
+
+                  let kananhilang = document.querySelector(".kanan");
+                  kananhilang.className += " hilang";
+
+                  let datanya = document.querySelector(".dataaa");
+                  datanya.className = datanya.className.replace("hilang", "");
+
+                  if (hasilakhir < 60) {
+                    let ulang = document.getElementById("ulang");
+                    ulang.className = ulang.className.replace("hilang", "");
+                  } else {
+                    let materi = document.getElementById("materi");
+                    materi.className = materi.className.replace("hilang", "");
+                  }
+                } else {
+                  Swal.fire({
+                    icon: "error",
+                    title: "Mohon Maaf!",
+                    text: "Jawablah semua soal terlebih dahulu!",
+                  });
+                  // alert(' Jawablah Semua Soal Terlebih Dahulu!');
+                }
+
+                //nilai disimpan ke local storage
+                localStorage.setItem("skkuis1", hasilakhir);
+                sessionStorage.setItem("skkuis1", hasilakhir);
+                // console.log(localStorage);Fnam
+              });
+              if (hasilakhir > 60) {
+                localStorage.setItem("skkuis1", 1);
+              }
+            }
+          };
+          //pemanggilan soal json
+          dat.open("GET", "/json/kuis1.json", true);
+          dat.send();
+
+          //FUNGSI WAKTU DAN HARI
+          var d = new Date();
+          var t = d.getTime();
+          var counter = t;
+
+          // ambil jamnya
+          window.setTimeout("waktu()", 1000);
+
+          function waktu() {
+            var tanggal = new Date();
+            setTimeout("waktu()", 1000);
+            return tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds();
+          }
+
+          // harinya
+          function hari() {
+            let tanggallengkap = new String();
+            let namahari = "Minggu Senin Selasa Rabu Kamis Jumat Sabtu";
+            namahari = namahari.split(" ");
+            let namabulan = "Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember";
+            namabulan = namabulan.split(" ");
+            let tgl = new Date();
+            let hari = tgl.getDay();
+            let tanggal = tgl.getDate();
+            let bulan = tgl.getMonth();
+            let tahun = tgl.getFullYear();
+            tanggallengkap = namahari[hari] + ", " + tanggal + " " + namabulan[bulan] + " " + tahun;
+            return tanggallengkap;
+          }
+
+          function createTask(nama, nisn, nilai, waktunya, hari, jwb) {
+            counter += 1;
+            const db = getDatabase();
+            set(ref(db, "kuis1/" + counter), {
+              id: counter,
+              nama: nama,
+              nisn: nisn,
+              // kelas: kelas,
+
+              nilai: nilai,
+              waktu: waktunya,
+              hari: hari,
+              jawabannya: jwb,
+            });
+          }
+        </script>
+        <script type="module" src="/js/kuis1.js"></script>
+      </body>
+    </body>
+  </head>
+</html>
