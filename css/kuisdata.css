@@ -1,0 +1,664 @@
+.hilang {
+  display: none;
+}
+
+.home {
+  margin-left: 1000px;
+}
+.w3-button {
+  cursor: none;
+  color: white;
+  pointer-events: none;
+  position: relative;
+  left: 38%;
+  width: 15%;
+  margin-top: 10%;
+}
+
+.data {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.buttonback {
+  font-family: Georgia, serif;
+  display: inline-block;
+  width: 25%;
+  height: 45px;
+  font-size: 1em;
+  padding-top: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #3d86bb;
+  color: black;
+  border: 3px double black;
+  border-radius: 10px;
+  position: relative;
+  font-weight: bolder;
+  margin-top: 10px;
+  /* float: left; */
+  margin-left: 320px;
+}
+
+.buttonback a {
+  font-family: Georgia, serif;
+  padding-bottom: 5px;
+}
+
+.buttonback:hover {
+  color: white;
+  background-color: #3d86bb;
+  border: 3px double white;
+}
+.buttonnext {
+  font-family: Georgia, serif;
+  display: inline-block;
+  margin-top: 10px;
+  color: black;
+  background-color: #3d86bb;
+  border: 3px double black;
+  width: 25%;
+  height: 45px;
+  padding-top: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border-radius: 10px;
+  position: relative;
+  font-weight: bolder;
+  /* float: right; */
+  margin-right: 320px;
+}
+.buttonnext a {
+  color: black;
+  font-family: Georgia, serif;
+  padding-bottom: 5px;
+}
+
+.buttonnext:hover {
+  color: white;
+  background-color: #3d86bb;
+  border: 3px double white;
+}
+.buttonnext a:hover {
+  color: white;
+}
+
+.buttonLanjut:hover {
+  color: white;
+  background-color: #3d86bb;
+  border: 3px double white;
+}
+.buttoLanjut a:hover {
+  color: white;
+}
+
+.isian {
+  /* display             :none; */
+  text-align: justify;
+  /* margin-top: 20px; */
+}
+
+body {
+  font-family: cursive;
+}
+#header {
+  font-size: 1.2em;
+  text-align: center;
+  color: white !important;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 0px;
+}
+
+/*untuk bagian nomor soal kiri*/
+.kiri {
+  width: 30%;
+  height: 655px;
+  background-color: white;
+  border: 3px groove black;
+  border-radius: 5px;
+  float: left;
+  font-family: Georgia, serif;
+}
+.kanan {
+  width: 70%;
+  height: 655px;
+  background-color: white;
+  border: 3px groove black;
+  border-radius: 5px;
+  float: right;
+  font-family: Georgia, serif;
+  overflow-y: scroll;
+}
+
+h3 {
+  text-align: center;
+  background-color: #3d86bb;
+  color: white;
+  height: 8%;
+  width: 100%;
+}
+
+/*Nomor Soal(judul) */
+.bg_full {
+  width: 98%;
+  height: 35px;
+  text-align: center;
+  color: black;
+  border: 2px double black;
+  background-color: #3d86bb;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+.text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/*Kotak Didalam Nomor Soal*/
+.bg_soal {
+  width: 98%;
+  border-radius: 2%;
+  border: 5px double #b9ccdc;
+  margin-left: 5px;
+  font-size: 1.1em;
+  background-color: #b9ccdc;
+}
+
+.bg_soal span {
+  padding: 2px;
+  display: inline-block;
+  width: 40px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+.soal_nav {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  float: left;
+  width: 13%;
+  height: 30px;
+  margin-left: 5%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.soal_nav:hover {
+  cursor: pointer;
+  background-color: #3d86bb;
+  color: white;
+}
+
+.belum {
+  background-color: white;
+  text-align: center;
+}
+
+.fontsedang {
+  font-size: 16px;
+}
+
+.clear {
+  clear: both;
+}
+
+.ket {
+  width: 100%;
+  margin-left: 8.5%;
+  margin-top: 10px;
+}
+
+.sudah {
+  background-color: #2071e2;
+  color: white;
+}
+
+.bg_pertanyaan {
+  width: 100%;
+}
+
+.no {
+  padding: 10px 0;
+}
+
+.no p {
+  margin-left: 24px !important;
+  font-size: 18px;
+}
+
+.inti_pertanyaan {
+  padding: 10px 20px;
+}
+
+.pertanyaannya {
+  /* border-left: 4px solid green; */
+  padding-left: 0px;
+  font-size: 1.2em;
+  height: fit-content;
+}
+
+.batas {
+  margin-top: 20px;
+  border-bottom: 2px solid black;
+}
+
+.lisoal li {
+  margin-left: 25px;
+}
+/* radio button */
+
+.bg_pilihan,
+.checkbox {
+  position: relative;
+  margin: 20px 0;
+  display: block;
+  font-size: 18px;
+  padding: -10px;
+}
+
+.bg_pilihan :hover,
+.checkbox:hover {
+  cursor: pointer;
+}
+
+.checkbox {
+  display: block;
+}
+
+.bg_pilihan input,
+.checkbox input {
+  position: absolute;
+  margin: 5px;
+  padding: 0;
+  visibility: hidden;
+}
+
+.bg_pilihan .textnya,
+.checkbox .textnya {
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+
+.nav_pilihan,
+.fake-checkbox {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.nav_pilihan:after,
+.fake-checkbox:after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #3d86bb;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.nav_pilihan {
+  border-radius: 50%;
+}
+
+.nav_pilihan:after {
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + span .nav_pilihan:after {
+  display: block;
+}
+
+/* akhir button */
+
+.nav_sebelum {
+  background-color: red;
+  color: white;
+  width: 20%;
+  height: 40px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 20%;
+}
+
+.nav_sebelum:hover {
+  background-color: #b9ccdc;
+  color: black;
+}
+
+.nav_sebelum p {
+  font-size: 18px;
+}
+
+.nav_selanjut {
+  background-color: blue;
+  color: white;
+  width: 20%;
+  height: 40px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 20%;
+}
+
+.nav_selanjut:hover {
+  background-color: #b9ccdc;
+  color: black;
+}
+
+.nav_selanjut p {
+  font-size: 18px;
+}
+
+.time {
+  float: right;
+  width: 20%;
+  height: 35px;
+  margin-right: 20px;
+  margin-top: 10px;
+  background-color: #b9ccdc;
+  color: black;
+  border: 2px groove black;
+  border-radius: 10px;
+}
+
+.dataaa {
+  background-color: whitesmoke;
+  height: 657px;
+}
+
+.skornya {
+  margin-left: 0px;
+  font-size: 18px;
+  padding-top: 10px 0px;
+  min-height: 450px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.t_hasil {
+  border-radius: 5px;
+  font-family: Georgia, serif;
+  padding: 20px;
+  padding-left: 50px;
+  width: 70%;
+  text-align: justify;
+  border: 3px dashed #3d86bb;
+  border-radius: 10px;
+  background-color: #b9ccdc;
+  margin-top: -50px;
+}
+.ket_ulang {
+  font-family: Georgia, serif;
+  font-size: 1.1em;
+}
+tr {
+  margin-left: 50px;
+}
+
+.ket_hasil {
+  width: 40%;
+  font-size: 18px;
+  padding: 5px !important;
+}
+
+.ket_ulang {
+  font-size: 20px;
+}
+/*buton selesai kuis*/
+.selesai {
+  font-weight: bold;
+  width: 20%;
+  height: 40px;
+  text-align: center;
+  background-color: green;
+  color: white;
+  border: 2px double black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 20%;
+}
+.selesai:hover {
+  background-color: #3d86bb;
+  cursor: pointer;
+  color: black;
+}
+
+.p {
+  display: inline;
+}
+
+/*nomor 1 diatas soalnya*/
+.nomor {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.3em;
+  background-color: #b9ccdc;
+  color: black;
+  border: 2px groove black;
+  border-radius: 10px;
+  width: 20%;
+  text-align: center;
+}
+
+.judul {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 70%;
+  height: 100px;
+  padding: 15px;
+  background-color: #3d86bb;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: white;
+  margin-top: -15px;
+}
+
+@media screen and (max-width: 992px) {
+  .home {
+    margin-left: 150px;
+  }
+  .fontsedang {
+    font-size: 13px;
+  }
+  .fase {
+    font-size: 12pt;
+  }
+  .tujuan {
+    width: 100%;
+  }
+  .petunjuk {
+    font-size: 15px;
+    width: 150%;
+    margin-left: -2px;
+    height: fit-content;
+  }
+  .petunjuk h5 {
+    font-size: 15px;
+  }
+  .bg_soal {
+    font-size: 15px;
+  }
+  p {
+    text-align: justify;
+    font-size: 15px;
+  }
+  .w3-panel {
+    width: 100%;
+    height: fit-content;
+    right: 0px;
+  }
+
+  .w3-panel2 {
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    margin-right: 3px;
+  }
+  .container {
+    overflow: auto;
+    width: 100%;
+  }
+
+  .w3-button {
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: -20px;
+  }
+  .kiri {
+    width: 100%;
+    height: fit-content;
+    font-size: 15px;
+  }
+
+  .kanan {
+    width: 100%;
+    height: fit-content;
+  }
+  .kanan h3 {
+    font-size: 18px !important;
+  }
+
+  .nav_sebelum {
+    width: 45%;
+  }
+
+  .nav_selanjut {
+    width: 45%;
+  }
+
+  .judul {
+    text-align: center;
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .t_hasil {
+    width: 90%;
+  }
+
+  .evaluasi {
+    width: 40%;
+  }
+  .button {
+    font-size: 14px;
+    float: right;
+    height: 40px;
+    margin-right: 40px;
+  }
+  .button2 {
+    font-size: 14px;
+    float: left;
+    margin-left: 40px;
+    height: 40px;
+  }
+
+  .text {
+    text-align: center;
+  }
+  .kiri {
+    height: fit-content;
+  }
+  .nav_sebelum {
+    float: left;
+    margin-left: 10px;
+    width: 40%;
+    height: 35px;
+  }
+  .nav_selanjut {
+    float: right;
+    margin-right: 10px;
+    margin-top: -35px;
+    width: 40%;
+    height: 35px;
+  }
+  .nav_sebelum p {
+    font-size: 14px;
+  }
+  .nav_selanjut p {
+    font-size: 14px;
+  }
+  .buttonback {
+    width: 40%;
+    height: 35px;
+    float: left;
+    margin-left: 30px;
+    font-size: 12px;
+  }
+  .buttonnext {
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+    font-size: 12px;
+    height: 35px;
+  }
+  .soal_nav {
+    font-size: 15px;
+  }
+  .selesai {
+    font-size: 15px;
+    float: right;
+    margin-right: 10px;
+    margin-top: -35px;
+    width: 40%;
+    height: 35px;
+  }
+  .nomor,
+  .time {
+    font-size: 15px;
+    width: 30%;
+    height: 30px;
+  }
+  .nav_pilihan,
+  .fake-checkbox {
+    width: 15px;
+    height: 15px;
+  }
+
+  .nav_pilihan:after,
+  .fake-checkbox:after {
+    width: 12px;
+    height: 12px;
+  }
+  .nav_pilihan {
+    margin-top: 7px;
+  }
+  .ket_ulang {
+    font-size: 16px;
+  }
+  .buttonLanjut {
+    font-size: 12px;
+    width: 40%;
+    height: 30px;
+  }
+}

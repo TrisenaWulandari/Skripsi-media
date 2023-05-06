@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: 35%;
+  font-family: Bahnschrift;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  color: black;
+  text-align: center;
+}
+
+.dafis-hilang {
+  display: block;
+}
+
+.content {
+  margin: 10px;
+  display: block;
+  background-color: white;
+  padding-bottom: 100px; /*UNTUK BISA KE BAWAH*/
+  overflow: auto;
+  border: 3px solid #68a9dd;
+  text-align: justify;
+  border-radius: 10px; /*UNTUK BENTUK GARIS PERSEGI ATAU TIDAK*/
+}
+
+.isi {
+  width: 100%;
+  display: block;
+}
+
+.petunjuk {
+  width: 46%;
+  float: left;
+  margin: 20px;
+  overflow: auto;
+}
+
+.kliktunjuk {
+  margin: 5px 0px 5px 0px;
+  background-color: #1a2c42;
+  padding: 5px 13px;
+  border-radius: 5px;
+  width: 71%;
+  font-size: 16px;
+}
+
+.kliktunjuk a {
+  text-decoration: none;
+  color: white;
+}
+
+.petunjuk1 {
+  min-height: 5px;
+  border-style: dashed;
+  border-color: #0f1011;
+  border-radius: 10px;
+  background-color: #adccdb;
+  padding: 10px 0px 5px 0px;
+  display: block !important;
+}
+
+.petunjuk1 li {
+  margin: 0px 25px 5px 35px;
+}
+
+.hilang {
+  display: none !important;
+}
+
+.kotakgaris {
+  width: 47%;
+  float: left;
+  overflow: auto;
+  margin: 0px 0px 10px 10px;
+  padding: 20px;
+  border-left: 8px solid #1a2c42;
+}
+
+/*navigasi kembali*/
+.kembalikemateri {
+  text-decoration: none;
+  background-color: #f47070;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 25%;
+  cursor: pointer;
+  height: 40px;
+  font-family: Georgia, serif !important;
+}
+
+.kembalikemateri:hover {
+  background-color: #f47070;
+  color: black;
+  transform: scale(1.1);
+}
+
+/*navigasi mulai*/
+.buttonmulai {
+  font-family: Georgia, serif !important;
+  display: inline-block;
+  width: 25%;
+  height: 40px;
+  padding-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #3a77b5;
+  color: black;
+  border-radius: 5px;
+  position: relative;
+  font-weight: bolder;
+  margin-top: 30px;
+  margin-right: 5px;
+}
+.buttonmulai:hover {
+  background-color: #77a4ba;
+  transform: scale(1.1);
+}
+
+.kanan {
+  float: right;
+  width: 75%;
+  background-color: #adccdb;
+  height: 485px;
+  padding: 20px;
+  overflow: auto;
+  text-align: justify;
+  box-sizing: border-box;
+  border: 2px solid #1a2c42;
+}
+
+.petunjuk {
+  width: 50%;
+  margin: 5px;
+  float: left;
+  /* overflow: none; */
+  height: auto;
+}
+.kliktunjuk {
+  width: 92%;
+  font-size: 12px;
+}
+.kotak {
+  width: 100%;
+  height: auto;
+  float: none;
+  overflow: none;
+  margin-top: 20px;
+  padding: 18px 0px 5px 0px;
+  border-left: none;
+  border-top: 2px solid #1a2c42;
+}
+.data_diri {
+  width: 95%;
+  border: 3px dashed #101111;
+  background-color: #cee3f6;
+  padding: 43px;
+  float: right;
+  margin-top: -10px;
+}
+
+label {
+  display: inline-block;
+  padding: 0px 10px 0px 20px;
+  text-align: justify;
+}
+
+.form {
+  padding: 10px 10px 0px 20px;
+}

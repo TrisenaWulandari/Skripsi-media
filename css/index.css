@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+.Kotak {
+  text-align: justify;
+  padding: 2rem;
+  margin: 20px;
+  padding: 20px;
+  padding-top: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 4px solid #2f4fa2;
+  /* border-style: dotted; */
+  background-color: #c1d4ea;
+  /* margin-bottom: 5px; */
+}
+/* .warnakotak {
+  padding: 20px;
+  padding-top: 0;
+  overflow: hidden;
+  border-radius: 10px; */
+/* border: 3px solid #151b3a; */
+/* border-style: dotted; */
+/* background-color: #b5e0ff;
+  /* margin-bottom: 5px; */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.jumbotron {
+  background-image: url(../image/Banner.png);
+  background-size: 100%;
+  height: 597px;
+  width: auto;
+  margin-top: 60px;
+  padding-top: 250px;
+}
+
+#content {
+  background-color: #ffff;
+  text-align: left;
+  padding: 10px;
+  padding-top: 80px;
+  overflow: visible;
+  width: 100%;
+}
+.section {
+  width: calc(100% - 190px);
+  margin-left: 190px;
+  transition: all 0.5s ease;
+}
+
+#content p {
+  margin: 0px;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.isi-materi {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.pageholder {
+  width: 70%;
+  float: right;
+  text-align: center;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #e0dddd;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  position: fixed;
+}
+
+#side_nav {
+  min-width: 190px;
+  max-width: 190px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #2c72e3;
+}
+
+#closebtn {
+  display: none;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  display: none;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  margin-right: 10px;
+  display: none;
+  text-decoration: none;
+}
+
+#judul {
+  display: none;
+}
+
+#sidebarGuru {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: #ffff;
+}
+#sidebarGuru a:hover {
+  background-color: rgb(187, 187, 187);
+}
+.responBenar {
+  background-color: green;
+  color: white;
+}
+.responSalah {
+  background-color: red;
+  color: white;
+}
+.boxMerah {
+  background-color: red;
+  color: white;
+  border: 2px solid;
+  border-color: black;
+  border-radius: 5px;
+}
+.boxHijau {
+  background-color: green;
+  color: white;
+  border: 2px solid;
+  border-color: black;
+  border-radius: 5px;
+}
+
+#textLogin {
+  margin-top: 85px;
+}
+
+.login {
+  margin-top: 50px;
+}
+.gbr4 {
+  margin-left: 300px;
+}
+.gbr5 {
+  margin-left: 200px;
+}
+
+/* .section {
+    width: calc(100% - 190px);
+    margin-left: 190px;
+    transition: all 0.5s ease;
+  } */
+
+@media screen and (max-width: 500px) {
+  .section {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .openbtn {
+    display: block;
+  }
+  #closebtn {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .closebtn {
+    display: block;
+  }
+
+  #judul {
+    display: block;
+  }
+
+  #side_nav {
+    margin-left: -190px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 2;
+  }
+  #side_nav.active {
+    margin-left: 0;
+  }
+
+  .login {
+    margin-top: 0px;
+  }
+
+  #gambarLogin {
+    width: 100%;
+  }
+
+  #formLogin {
+    width: 100%;
+  }
+
+  #textLogin {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .jumbotron {
+    background-image: url(../image/banner-hp.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-top: 60px;
+    padding-top: 440px;
+  }
+
+  nav strong {
+    display: none;
+  }
+
+  p img {
+    width: 150px;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .pagination {
+    font-size: 10pt;
+  }
+
+  #peristiwa {
+    display: block;
+    float: left;
+  }
+
+  #p1-3 {
+    width: 75%;
+  }
+
+  #gbr {
+    width: 80%;
+  }
+
+  #gbr2 {
+    width: 40%;
+  }
+
+  #gbr3 {
+    width: 100%;
+  }
+
+  .gbr4 {
+    margin-left: 0px;
+  }
+  .gbr5 {
+    margin-left: 0px;
+  }
+}
+.Kotak {
+  text-align: justify;
+  padding: 2rem;
+  margin: 20px;
+  padding: 20px;
+  padding-top: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 4px solid #2f4fa2;
+  /* border-style: dotted; */
+  background-color: #ffffff;
+  /* margin-bottom: 5px; */
+}

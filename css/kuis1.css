@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  background-color: #c8dbbe;
+}
+
+#k1 {
+  font-size: 20px;
+}
+
+.kotak1 {
+  padding: 0 20px 0 20px;
+  height: fit-content;
+  background-color: white;
+  border: 2px dashed black;
+  border-radius: 20px;
+}
+
+.kotak2 {
+  padding: 0 50px 10px 50px;
+  height: fit-content;
+  background-color: white;
+  border: 2px dashed black;
+  border-radius: 20px;
+}
+
+.title {
+  border: 1px dashed black;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.hilang {
+  display: none;
+}
+
+/* Tampilan K2 */
+#k2 {
+  background-color: white;
+  height: 100vh;
+  /* overflow: hidden; */
+  /* overflow: auto; */
+}
+
+.time {
+  height: fit-content;
+  float: right;
+  width: fit-content;
+  padding: 5px 10px;
+  border: 2px dashed black;
+}
+
+.title {
+  margin-top: 20px;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #ca9f5e;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.kotaksoal {
+  padding: 50px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.kotaknomor {
+  background-color: white;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+.bg_soal {
+  height: fit-content;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+/* Pilihan */
+.bg_pil {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.lurus {
+  display: inline-flex;
+}
+
+.bg_pil,
+.checkbox {
+  position: relative;
+  margin: 20px 0;
+  display: block;
+  font-size: 18px;
+  padding: -10px;
+}
+
+.bg_pil:hover,
+.checkbox:hover {
+  cursor: pointer;
+}
+
+.checkbox {
+  display: block;
+}
+
+.bg_pil input,
+.checkbox input {
+  display: inline-flex;
+  position: absolute;
+  margin: 5px;
+  padding: 0;
+  visibility: hidden;
+}
+
+.bg_pil .textnya,
+.checkbox .textnya {
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+
+.nav_pil,
+.fake-checkbox {
+  margin: 5px 0;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.nav_pil:after,
+.fake-checkbox:after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: #ca9f5e;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.nav_pil {
+  border-radius: 50%;
+}
+
+.nav_pil:after {
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + span .nav_pil:after {
+  display: block;
+}
+
+/* No soal belum sudah */
+.nosoal_bg {
+  width: 100%;
+  height: 50%;
+  padding: 10px 0;
+  background-color: #ffc4c4;
+}
+
+.no_soal {
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.no_soal:hover {
+  cursor: pointer;
+  background-color: #ca9f5e;
+  color: white;
+}
+
+.belum {
+  background-color: white;
+  text-align: center;
+}
+
+.sudah {
+  background-color: #ca9f5e;
+  color: white;
+}
+
+.cbelum {
+  background-color: white;
+  text-align: center;
+  margin-left: 5px;
+  padding: 0 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.csudah {
+  background-color: #ca9f5e;
+  color: white;
+  margin-left: 5px;
+  padding: 0 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.tsoal {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #ca9f5e;
+}
+
+/* Tampilan K3 */
+.content {
+  background-color: white;
+  width: 60%;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.data {
+  padding: 0 50px 0 100px;
+}
+
+.judul {
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .kotaksoal {
+    height: fit-content;
+    background-color: white;
+  }
+}

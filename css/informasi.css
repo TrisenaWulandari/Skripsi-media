@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #235789;
+}
+
+.konten {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.konten p {
+  text-align: center;
+}
+
+.kikd {
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  font-family: "Open Sans";
+  font-size: 23px;
+  background-color: #235789;
+}
+
+.tabel {
+  width: 80%;
+  height: 90%;
+  border: 3px;
+  margin-top: 0.7%;
+  background: #f2f3c6;
+  overflow: auto;
+  font-size: 22px;
+  text-align: "justify";
+  margin-left: 10%;
+  float: left;
+  padding: 25px;
+  border-style: dotted;
+  border-radius: 15px;
+}
+
+.table {
+  margin-left: 50%;
+}
+
+.btnprofil {
+  width: 20%;
+  height: 10%;
+  font-size: 23px;
+  font-family: "Open Sans";
+  border: 2px solid black;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
+}
+
+.btnprofil:hover {
+  border: 3px solid rgb(114, 114, 114);
+  border-radius: 10px;
+  color: rgb(122, 119, 119);
+}
+
+.peta {
+  width: 100%;
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 0.7em !important;
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #235789;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2em;
+  color: #251605;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+body {
+  font-family: "Open Sans";
+  background-size: cover;
+  background-repeat: space;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+@media only screen and (max-width: 750px) {
+  .list-course {
+    margin-bottom: 20px;
+  }
+
+  .course-scroll {
+    height: 100%;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+  }
+}
